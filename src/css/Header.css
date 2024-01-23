@@ -1,20 +1,25 @@
 :root {
-    --tittle-color: #333;
-    --h5-font-size: 16px;
+    --tittle-color: #282627;
+    --text-color: #545454;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h4-font-size: 1.10rem;
+    --h5-font-size: 1rem;
     --bg-color-alt: #333;
-    --primary-color: #00f;
-    --transition: ease 0.3s;
+    --primary-color: #7dc3bb;
+    --transition: ease 0.1s;
 }
 
 
 #header{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 30px;
-    z-index: 100 ;
+    align-items: center;
 }
+
 button{
     border: none;
     font-size: 2rem;
@@ -28,6 +33,7 @@ ul{
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav_logo{
@@ -36,18 +42,11 @@ ul{
 }
 
 .nav_menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0;
-    height:  100vh ;
+    width: 40%;
     display: flex;
-    background-color: var(--bg-color-alt);
-    z-index: 10;
-    transition: all 1s var(--transition);
-}
-.show-menu{
-      width: 512px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 1rem;
+    border-radius: 30px; 
 }
 
 .nav_data{
@@ -57,16 +56,22 @@ ul{
 }
 
 .nav_list{
-    margin-bottom: 40px;
+    padding-left: 0;
+    display: flex;
+    margin: auto;
 }
 
 .nav_list li{
-    margin-bottom: 20px;
     color: aliceblue;
+    margin-right: 2.15rem;
+}
+
+.nav_list li:last-child {
+    margin-right: 0;
 }
 
 .nav_link{
-    color: aliceblue;
+    color: var(--text-color);
     font-size: var(--h5-font-size);
     font-weight: 700;
     transition:  all  0.3s var(--transition) ;
@@ -83,7 +88,7 @@ ul{
 }
 
 .theme_toggler{
-    position: relative;
+    /* position: relative; */
     height: 30px;
     width: 28px;
 }
@@ -93,9 +98,12 @@ ul{
     display: flex; 
     align-items: center;
     cursor: pointer;
-    position: absolute;
-    left: 0;
+    /* position: absolute; */
+    /* left: 0; */
     width: 100%;
+}
+.nav_toogle{
+    display: none;
 }
 
 .nav_toogle span{

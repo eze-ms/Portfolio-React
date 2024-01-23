@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Contexto, Temas } from './Contexto';
 import { BsSun, BsMoon } from 'react-icons/bs';
 import '../css/Header.css';
@@ -12,14 +13,14 @@ function Header(props) {
     return (
         <header id='header' style={tema}>
             <nav className="nav">
-                <a href="#" className="nav_logo text-css">Macchi</a>
+                <Link to="#" className="nav_logo text-css">Macchi</Link>
                 <div className={`${ShowMenu ? 'nav_menu show-menu':'nav_menu'}`}>
                     <ul className='nav_list'>
                         {links.map(({ name, path }, index)=>{
                             return (
                                 <li className="nav_item" key={index}>
-                                    <a href="#" className='nav_link text-cs'></a>
-                                        {name}
+                                    <Link to="#" className='nav_link text-cs'>{name}</Link> 
+                                     
                                 </li>
                             )
                         })}
