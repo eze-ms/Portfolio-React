@@ -1,0 +1,115 @@
+:root {
+    --tittle-color: #333;
+    --h5-font-size: 16px;
+    --bg-color-alt: #333;
+    --primary-color: #00f;
+    --transition: ease 0.3s;
+}
+
+
+#header{
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 30px;
+    z-index: 100 ;
+}
+button{
+    border: none;
+    font-size: 2rem;
+    background-color: #28121200;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    color: var(--tittle-color);
+    font: var(--h5-font-size);
+}
+
+.nav_menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height:  100vh ;
+    display: flex;
+    background-color: var(--bg-color-alt);
+    z-index: 10;
+    transition: all 1s var(--transition);
+}
+.show-menu{
+      width: 512px;
+}
+
+.nav_data{
+    padding: 84px 84 px 0 154px;
+    margin: auto;
+    width: 100%;
+}
+
+.nav_list{
+    margin-bottom: 40px;
+}
+
+.nav_list li{
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.nav_link{
+    color: aliceblue;
+    font-size: var(--h5-font-size);
+    font-weight: 700;
+    transition:  all  0.3s var(--transition) ;
+}
+
+.nav_link:hover{
+    color: var(--primary-color );
+}
+
+.nav_btns{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.theme_toggler{
+    position: relative;
+    height: 30px;
+    width: 28px;
+}
+
+.theme_toggler button{
+    font-size: var(--h4-font-size);
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.nav_toogle span{
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #000000;
+}
+
+.nav_toogle span:first-child{
+    top: 8px;
+}
+
+.nav_toogle span:last-child{
+    bottom: 8px;
+}
