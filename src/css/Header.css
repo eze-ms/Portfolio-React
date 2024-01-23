@@ -1,20 +1,5 @@
-:root {
-    --tittle-color: #282627;
-    --text-color: #545454;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h4-font-size: 1.10rem;
-    --h5-font-size: 1rem;
-    --bg-color-alt: #333;
-    --primary-color: #7dc3bb;
-    --transition: ease 0.1s;
-}
-
-
 #header{
     /* position: absolute; */
-    top: 0;
-    background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 30px;
     align-items: center;
@@ -23,7 +8,7 @@
 button{
     border: none;
     font-size: 2rem;
-    background-color: #28121200;
+    /* background-color: #28121200; */
 }
 
 ul{
@@ -37,8 +22,9 @@ ul{
 }
 
 .nav_logo{
-    color: var(--tittle-color);
-    font: var(--h5-font-size);
+    color: var(--title-color);
+    font-size: var(--h4-font-size);
+    font-weight: 600;
 }
 
 .nav_menu{
@@ -62,7 +48,7 @@ ul{
 }
 
 .nav_list li{
-    color: aliceblue;
+    color: var(--text-color);
     margin-right: 2.15rem;
 }
 
@@ -71,14 +57,14 @@ ul{
 }
 
 .nav_link{
-    color: var(--text-color);
     font-size: var(--h5-font-size);
     font-weight: 700;
-    transition:  all  0.3s var(--transition) ;
+    transition:  all  0.3s var(--transition);
 }
 
 .nav_link:hover{
     color: var(--primary-color );
+    line-height: 1.2px;
 }
 
 .nav_btns{

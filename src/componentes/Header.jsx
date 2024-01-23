@@ -19,7 +19,7 @@ function Header(props) {
                         {links.map(({ name, path }, index)=>{
                             return (
                                 <li className="nav_item" key={index}>
-                                    <Link to="#" className='nav_link text-cs'>{name}</Link> 
+                                    <Link to="#" className='nav_link'>{name}</Link> 
                                      
                                 </li>
                             )

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 // import { Link, Router, Routes } from 'react-router-dom';
 import { Contexto } from './componentes/Contexto';  
 import Header from './componentes/Header';
+import Resume from './componentes/Resume';
+import About from './componentes/About';
 
 
 import './App.css';
@@ -21,7 +23,8 @@ function App() {
         }
       >
         <Header />
-        
+        <Resume />
+        <About />
 
       </Contexto.Provider>
     </div>

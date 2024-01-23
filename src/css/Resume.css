@@ -1,0 +1,112 @@
+.home{
+    text-align: left;
+    width: 100%;
+}
+
+.home_container{
+    width: 100%;
+}
+
+.home_container span{
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+}
+
+.home_subtitle,
+.home_job {
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}  
+
+.home_subtitle,
+.home_job  span{
+    font-size: var(--h2-font-size);
+}
+
+.home_subtitle,
+.home_title span{
+    color: var(--primary-color);
+}
+
+.home_title {
+    position: relative;
+    font-size: var(--h1-font-size);
+    margin: 0;
+    color: white; /* Color del texto */
+}
+
+.home_title span{
+    font-size: var(--h1-font-size);
+    margin: 0;
+    text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
+        2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%),
+        2px 2px 0 rgb(0 0 0 /20%);
+    line-height: 1.2px;
+    margin-top: 15px;
+}
+
+.text-cs{
+    letter-spacing: 0.5rem;
+}
+
+.home_text{
+    width: 33%;
+}
+.fa-map-pin{
+    margin-left: 0.5rem;
+}
+
+.home_social_links{
+    display: flex;
+}
+
+.home_social_links a{
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.home_social_links a:last-child {
+    margin-right: 0;
+}
+
+.mail{
+    font-size: 1.3rem;
+}
+
+.container_download{
+    padding: 1rem;
+    border-radius: 40px;
+    border: 2px solid var(--primary-color);
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    padding-inline: 40px;
+    position: relative;
+    width: 15%;
+} 
+
+.container_download::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--primary-color);
+    border-radius: inherit;
+    transform: scale(0.3);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 0.7s var(--transition);
+    z-index: -1;
+}
+
+.container_download:hover::before{
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    color: #fff;
+}
+
+.container_download:hover{
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus preferencias */
+}

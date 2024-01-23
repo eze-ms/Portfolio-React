@@ -1,3 +1,52 @@
+:root {
+
+  /* colores */
+
+  --title-color: #282627;
+  --text-color: hsl(0, 0%, 21%);
+  --text-color-bg:  hsl(0, 0%, 92%);
+  --primary-color:  hsl(165, 60%, 40%);;
+  --bg-title-color: hsl(0, 0%, 100%);
+  --bg-color:  hsl(216, 18%, 16%);
+  --bg-color-alt:  hsl(213, 10%, 21%);
+  --container-color:  hsl(217, 18%, 14%);
+  --border-color:  hsl(210, 2%, 65%);
+
+    /* fonts */
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.75rem;
+    --h4-font-size: 1.10rem;
+    --h5-font-size: 1rem;
+    --small-font-size: 0.9rem;
+
+    /* gradient */
+
+    --first-gradient: linear-gradient(
+      0deg,
+      var(--bg-color-alt) 0%,
+      var(--bg-color) 100%,
+    );
+
+    --second-gradient: linear-gradient(
+      180deg,
+      var(--bg-color-alt) 0%,
+      var(--bg-color) 100%,
+    );
+
+    --third-gradient: linear-gradient( 
+      180deg,
+      var(--bg-color) 0%,
+      var(--bg-color) 100%,
+    );
+
+    /* Transition */
+    --transition: ease 0.1s;
+    --shadow: 5px 5px rgb(255 255 255 / 10%);
+} 
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -6,13 +55,15 @@
     margin: auto;
     text-align: center;
     width: 1200px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    font-family: 'Jost', sans-serif;
+    background-color: var(--bg-color-bg)
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   display: block;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Temas = {
-    claro : { backgroundColor: "#fff", color: "black" },
+    claro : { backgroundColor: "#black", color: "black" },
     oscuro : { backgroundColor: "black", color: "#fff" },
 }
 

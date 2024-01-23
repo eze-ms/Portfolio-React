@@ -1,0 +1,5 @@
+.about_container h2 {
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+    width: 40%;
+}
