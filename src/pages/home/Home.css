@@ -10,6 +10,7 @@
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 0 0 8ox hsla(0, 0%, 0% , 0.3);
+    z-index: 1;
 } 
 
 .home__data{
@@ -25,5 +26,14 @@
     font-size: var(--h1-font-size);
     line-height: 1.24;
     padding-left: 70px;
+}
 
+.color__block{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: var(--first-color);
+    top: -50px;
+    left: -83%;
+    transform: rotate(-15deg);
 }
