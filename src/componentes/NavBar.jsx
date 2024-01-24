@@ -28,7 +28,7 @@ const NavBar = () => {
             </div>
             
             <div 
-                className={`${showMenu ? 'nav__togge animate-toggle' : 'nav__toggle'}`}
+                className={`${showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`}
                 onClick={() => SetShowMenu(!showMenu)}
             >
                 <span></span>
