@@ -59,9 +59,9 @@ img {
 body,
 input,
 textarea{
-  font-family: var(--body-font);
+  font-family: var(--second-font);
   font-size: var(--normal-font-size);
-  font-weight: var(--weigth-500);
+  font-weight: var(--weigth-700);
 }
 
 body{
@@ -75,7 +75,7 @@ h3,
 h4{
   color: var(--title-color);
   font-family: var(--second-font);
-  font: var(--weigth-00);
+  font: var(--weigth-700);
 }
 
 ul{
