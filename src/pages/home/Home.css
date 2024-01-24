@@ -1,0 +1,29 @@
+.home{
+    grid-template-columns: 4.32fr 7.68fr;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+}
+
+.home__img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8ox hsla(0, 0%, 0% , 0.3);
+} 
+
+.home__data{
+    background-color:  var(--fist-color);
+    max-width: 600px;
+    margin-inline: auto;
+    padding-top: 1.25rem;
+    text-align: left;
+}
+
+.home__title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 70px;
+
+}

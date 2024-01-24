@@ -1,11 +1,26 @@
 import React from 'react'
+import Profile from '../../assets/home.jpg'
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa";
+import "./Home.css"
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
-  )
-}
+    <section className='home section grid'>
+      <img src={Profile} alt='' className='home__img' />
+       
+      <div className="home__content">
+        <div className="home__data">
+          <h1 className="home__title">
+            <span>Soy Ezequiel Macchi</span> Desarrollador Front-end
+          </h1>
+          <p className="home__description">Mi enfoque se centra en la creación de un código limpio, funcional e impactante para garantizar experiencias visuales atractivas en cada proyecto.</p>
 
+          <Link to='/about' className='button'>Más acerca de mí <span className="button__icon"><FaArrowRight /></span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
 export default Home
