@@ -25,7 +25,19 @@
     position: relative;
     font-size: var(--h1-font-size);
     line-height: 1.24;
-    padding-left: 70px;
+    color: var(--first-color);
+    /* padding-left: 70px; */
+    margin-bottom: 0.5rem;
+}
+
+.home__subtitle{
+    font-size: var(--h2-font-size);
+    margin-top: 0;
+}
+
+.home__description{
+    font-weight: 500;
+    width: 88%;
 }
 
 .color__block{

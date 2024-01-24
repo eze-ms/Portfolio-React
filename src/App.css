@@ -92,13 +92,25 @@ textarea{
 
 /* REUSABLE */
 
+.container{
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
 .grid{
   display: grid;
   gap: 30px;
 }
 
 .section{
-  padding-block: 70px;
+  padding-block: 4.375rem;
+}
+
+.section__title{
+  font-size: var(--big-font-size);
+  font-weight: var(--weigth-800);
+  text-align: center;
+  margin-bottom: 4.375rem;
 }
 
 .button{
