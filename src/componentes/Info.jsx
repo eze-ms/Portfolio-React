@@ -3,15 +3,14 @@ import { personalInfo } from '../data';
 
 function Info() {
   return (
-    <>
+    <div className="info">
       {personalInfo.map(({ title, description }, index) => (
-        <li className="info__item" key={index}>
+        <div className="info__item" key={index}>
           <span className="info__title">{title}</span>
           <span className="info_description">{description}</span>
-        </li>
+        </div>
       ))}
-    </>
+    </div>
   );
 }
-
 export default Info;

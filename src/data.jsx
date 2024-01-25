@@ -37,27 +37,27 @@ export const aboutLinks = [
     {
         id: 1,
         name: "Datos personales",
-        path: "/personal"
+        path: "/about/info"
     },
     {
         id: 2,
         name: "Skills",
-        path: "/skills"
+        path: "/about/skills"
     },
     {
         id: 3,
         name: "Otros",
-        path: "/others"
+        path: "/about/others"
     },
     {
         id: 4,
         name: "Educación y Certificaciones",
-        path: "/formation"
+        path: "/about/formation"
     },
     {
         id: 5,
-        name: "SofSkills",
-        path: "/sofskills"
+        name: "SoftSkills",
+        path: "/about/softskills"
     }
     
 ];

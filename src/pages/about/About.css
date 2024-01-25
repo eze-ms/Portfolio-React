@@ -1,3 +1,24 @@
 .home__description{ 
     text-align: left;
 }
+
+.info_list_grid_about{
+    display: flex;
+    justify-content: center;
+}
+
+.info_list_grid_about>.nav__item{
+    margin-block: 0;
+}
+
+.info_list_grid_about>.nav__item>.nav__link{
+    position: inherit;
+    border-radius: 0%;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    margin-right: 2rem;
+}
+
+
+
