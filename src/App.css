@@ -107,10 +107,9 @@ textarea{
 }
 
 .section__title{
-  font-size: var(--big-font-size);
+  font-size: var(--h1-font-size);
   font-weight: var(--weigth-800);
-  text-align: center ;
-  margin-bottom: 4.375rem;
+  /* text-align: center ; */
 }
 
 .button{

@@ -1,0 +1,32 @@
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.info__item{
+    border: 1px solid var(--border-color);
+    padding: 20px 30px 25px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.info__title,.info_description{
+    font-size: var(--normal-font-size);
+    letter-spacing: 0.04rem;
+
+}
+
+.info__title{
+    font-weight: var(--weigth-400);
+}
+
+.info_description{
+    font-weight: var(--weigth-600);
+    margin-left: 0.15rem;
+
+}
+

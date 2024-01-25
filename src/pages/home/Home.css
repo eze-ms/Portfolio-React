@@ -39,7 +39,7 @@
 
 .home__data p,
 .home__subtitle{
-    font-size: var(--h2-font-size);
+    font-size: var(--normal-font-size);
     margin-top: 0;
     margin-bottom: 0;
     color: var(--title-color);
