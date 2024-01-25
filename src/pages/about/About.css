@@ -1,15 +1,24 @@
-.about__container{
-    display: flex;
-    justify-content: space-around;
-    padding: 40px ;
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; /* Espacio entre las columnas */
+    justify-items: center;
+  }
+  
+  .about__img {
+    width: 60%; /* Ajustar la imagen al 100% del ancho de su contenedor */
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3);
+    z-index: 1;
 }
-
-.box_about__me{
+  
+.box_about__me {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 50%;
 }
 
 .box_about__me .section__title{
@@ -17,10 +26,18 @@
     margin-bottom: 0;
 }
 
-.about__description{ 
+.about__description_1,.about__description_2,.about__description_3{ 
     text-align: left;
     font-size: var(--normal-font-size);
     font-weight: var(--weigth-500);
+}
+.about__description_1{
+    width: 80%;
+
+}
+
+.about__description_2,.about__description_3{
+    width: 80%;
 }
 .nav__name_about{
     font-weight: var(--weigth-600);

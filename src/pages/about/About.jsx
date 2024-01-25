@@ -22,19 +22,23 @@ const About = () => {
   };
 
   return (
-    <main className='section_container'>
-      <section className='about_section'>
-
+      <section className='about section grid'>
         <div className='about__container'>
-          <img src={Profile} alt='' className='home__img' />
+          <img src={Profile} alt='' className='about__img' />
           <div className="box_about__me">
             <h3 className='section__title'>Sobre <span>de mí</span></h3>
             <div className='about__info'>
-              <p className='about__description'>
+              <p className='about__description_1'>
                 Como desarrollador front-end junior, poseo un impresionante conjunto de habilidades en HTML, CSS,
-                JavaScript, React, SCSS y PHP. Con una base profesional en diseño, mi experiencia se centra en la
+                JavaScript, React, SCSS y PHP.
+              </p>
+              <p className='about__description_2'>
+                Con una base profesional en diseño, mi experiencia se centra en la
                 creación de interfaces dinámicas y atractivas mediante la redacción de código limpio y optimizado, así
-                como en la utilización de herramientas y técnicas de desarrollo de vanguardia. Disfruto trabajando en un
+                como en la utilización de herramientas y técnicas de desarrollo de vanguardia.
+              </p>
+              <p className='about__description_3'>
+                Disfruto trabajando en un
                 entorno colaborativo donde puedo aprender y compartir conocimientos con mis compañeros para producir
                 aplicaciones web excepcionales.
               </p>
@@ -70,18 +74,9 @@ const About = () => {
             {activeLink === '/about/others' && <Others />}
             {activeLink === '/about/formation' && <Formacion />}
             {activeLink === '/about/softskills' && <SoftSkills />}
-        </div>
-          
-         
-         
-
-           
-
-           
-
+          </div>
         </div>
       </section>
-    </main>
   );
 };
 
