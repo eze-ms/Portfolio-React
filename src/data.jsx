@@ -160,7 +160,7 @@ export const personalSkills = [
     },
     {
         id: '11',
-        title: 'Database (SQL/NoSQL)',
+        title: 'Database',
         icon: <FaDatabase className='nav__icon'/>
     },
     {

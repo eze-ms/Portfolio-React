@@ -1,6 +1,7 @@
 .about__container{
     display: flex;
     justify-content: space-around;
+    padding: 40px ;
 }
 
 .box_about__me{
