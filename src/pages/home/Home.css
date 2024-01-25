@@ -21,18 +21,28 @@
     text-align: left;
 }
 
+
 .home__title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--weigth-600);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.home__title span{
     position: relative;
     font-size: var(--h1-font-size);
     line-height: 1.24;
     color: var(--first-color);
-    /* padding-left: 70px; */
-    margin-bottom: 0.5rem;
+    font-weight: var(--weigth-800);
 }
 
+.home__data p,
 .home__subtitle{
     font-size: var(--h2-font-size);
     margin-top: 0;
+    margin-bottom: 0;
+    color: var(--title-color);
 }
 
 .home__description{

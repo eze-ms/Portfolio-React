@@ -11,8 +11,9 @@ const Home = () => {
        
       <div className="home__content">
         <div className="home__data">
+          <p>Hola,</p>
           <h1 className="home__title">
-            <span>Soy Ezequiel Macchi</span>
+            Soy <span className='title__bold'>Ezequiel.</span>
           </h1>
           <h2 className="home__subtitle">
             <span>Desarrollador Front-end</span>
