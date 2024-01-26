@@ -1,5 +1,6 @@
 import React from 'react'
 import { softSkills } from '../data';
+import "./SoftSkills.css"
 
 function SoftSkills() {
     return (

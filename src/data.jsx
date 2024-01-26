@@ -1,9 +1,7 @@
-import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from 'react-icons/fa';
-import { FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase } from 'react-icons/fa';
+import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
 import { SiMysql, SiJquery, SiNextdotjs, SiTypescript } from 'react-icons/si';
 import { FaGithub, FaBootstrap } from 'react-icons/fa';
-import { SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
-import { SiMui } from "react-icons/si";
+import { SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
 
 
 export const links = [
@@ -63,112 +61,118 @@ export const aboutLinks = [
 ];
 
 export const personalInfo = [
-
     {
-        id: 1,
-        title: 'Nombre',
-        description: 'Ezequiel',
+      id: 1,
+      title: 'Nombre',
+      description: 'Ezequiel',
+      isLink: false,
     },
-
     {
-        id:2,
-        title: 'Primer Apellido',
-        description : 'Macchi',
+      id: 2,
+      title: 'Apellidos',
+      description: 'Macchi Seoane',
+      isLink: false,
     },
-
     {
-        id:3,
-        title: 'Segundo Apedillo',
-        description : 'Soeane',
+      id: 3,
+      title: 'Pais',
+      description: 'España',
+      isLink: false,
     },
-
     {
-        id:4,
-        title: 'Pais',
-        description : 'España',
+      id: 4,
+      title: 'Ciudad',
+      description: 'Barcelona',
+      isLink: false,
     },
-
     {
-        id:5,
-        title: 'Ciudad',
-        description : 'Barcelona',
+      id: 5,
+      title: 'Teléfono',
+      description: '691 569 610',
+      isLink: false,
     },
-
     {
-        id:6,
-        title: 'Teléfono',
-        description : '691 569 610',
+      id: 6,
+      title: 'Email',
+      description: 'macchiezequiel@gmail.com',
+      isLink: false,
     },
-
     {
-        id:7,
-        title: 'Email',
-        description : 'macchiezequiel@gmail.com',
-    }
+      id: 7,
+      title: 'LinkedIn',
+      description: 'https://www.linkedin.com/in/ezems/',
+      isLink: true,
+    },
+    {
+      id: 8,
+      title: 'GitHub',
+      description: 'https://github.com/eze-ms',
+      isLink: true,
+    },
 ];
 
 export const personalSkills = [
-    {   
-        id: '1',
-        title: 'JavaScript',
-        icon: <FaJs className='nav__icon'/>
+    {
+      id: '1',
+      title: 'JavaScript',
+      icon: <FaJs className='nav__icon' />,
     },
     {
-        id: '2',
-        title: 'React',
-        icon: <FaReact className='nav__icon'/>
+      id: '2',
+      title: 'React',
+      icon: <FaReact className='nav__icon' />,
     },
     {
-        id: '3',
-        title: 'TypeScript',
-        icon: <SiTypescript className='nav__icon'/>
+      id: '3',
+      title: 'TypeScript',
+      icon: <SiTypescript className='nav__icon' />,
     },
     {
-        id: '4',
-        title: 'HTML5',
-        icon: <FaHtml5 className='nav__icon'/>
+      id: '4',
+      title: 'Vue.Js',
+      icon: <FaVuejs className='nav__icon' />,
     },
     {
-        id: '5',
-        title: 'CSS',
-        icon: <FaCss3Alt className='nav__icon'/>
+      id: '5',
+      title: 'HTML5',
+      icon: <FaHtml5 className='nav__icon' />,
     },
     {
-        id: '6',
-        title: 'Sass',
-        icon: <FaSass className='nav__icon'/>
+      id: '6',
+      title: 'CSS',
+      icon: <FaCss3Alt className='nav__icon' />,
     },
     {
-        id: '7',
-        title: 'NextJs',
-        icon: <SiNextdotjs className='nav__icon'/>
+      id: '7',
+      title: 'Sass',
+      icon: <FaSass className='nav__icon' />,
     },
     {
-        id: '8',
-        title: 'MySQL',
-        icon: <SiMysql className='nav__icon'/>
+      id: '8',
+      title: 'NextJs',
+      icon: <SiNextdotjs className='nav__icon' />,
     },
     {
-        id: '9',
-        title: 'PHP',
-        icon: <FaPhp className='nav__icon'/>
+      id: '9',
+      title: 'MySQL',
+      icon: <SiMysql className='nav__icon' />,
     },
     {
-        id: '10',
-        title: 'jQuery',
-        icon: <SiJquery className='nav__icon'/>
+      id: '10',
+      title: 'PHP',
+      icon: <FaPhp className='nav__icon' />,
     },
     {
-        id: '11',
-        title: 'Database',
-        icon: <FaDatabase className='nav__icon'/>
+      id: '11',
+      title: 'jQuery',
+      icon: <SiJquery className='nav__icon' />,
     },
     {
-        id: '12',
-        title: 'MySql',
-        icon: <SiMysql className='nav__icon'/>
+      id: '12',
+      title: 'Database',
+      icon: <FaDatabase className='nav__icon' />,
     }
-];
+]
 
 export const otherPersonalSkills = [
     {
@@ -226,6 +230,11 @@ export const otherPersonalSkills = [
         title: 'WordPress',
         icon: <SiWordpress className='nav__icon'/>
     },
+    {
+        id: '12',
+        title: 'Jira',
+        icon: <FaJira className='nav__icon'/>
+    }
 ];
 
 export const formation = [

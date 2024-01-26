@@ -1,0 +1,35 @@
+/* Formacion.css */
+.info__school {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+.info__school.visible {
+    opacity: 1;
+    transform: translateY(0);
+    width: 90%;
+}
+
+.info__item{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--border-color);
+    padding-left: 1.5rem;
+    
+}
+
+.info__item__school{
+    font-weight: var(--weigth-600);
+}
+
+.info__item__description{
+    font-weight: var(--weigth-400);
+    font-size: var(--smaller-font-size);
+    margin-bottom: 1rem;
+}
+

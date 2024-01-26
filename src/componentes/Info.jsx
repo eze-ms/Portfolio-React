@@ -1,27 +1,31 @@
-// En el componente Info.jsx
 import React, { useEffect } from 'react';
 import { personalInfo } from '../data';
-import "./Info.css";
+import './Info.css';
 
 function Info() {
   useEffect(() => {
-    // Añade la clase 'visible' después de un breve retraso
     const timeoutId = setTimeout(() => {
       const infoElement = document.querySelector('.info');
       if (infoElement) {
         infoElement.classList.add('visible');
       }
-    }, 100); // Ajusta el valor del retraso según sea necesario
+    }, 100);
 
-    return () => clearTimeout(timeoutId); // Limpia el timeout en caso de que el componente se desmonte
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
     <div className="info">
-      {personalInfo.map(({ title, description }, index) => (
-        <div className="info__item_info" key={index}>
+      {personalInfo.map(({ id, title, description, isLink }) => (
+        <div className="info__item_info" key={id}>
           <span className="info__title">{title}:</span>
-          <span className="info_description"> {description}</span>
+          {isLink ? (
+            <a className="url" href={description} target="_blank" rel="noopener noreferrer">
+              {description}
+            </a>
+          ) : (
+            <span className="info_description">{description}</span>
+          )}
         </div>
       ))}
     </div>
