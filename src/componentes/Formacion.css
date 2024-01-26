@@ -2,11 +2,12 @@
 .info__school {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-
+    border-left: 1px solid var(--border-color);
+    position: relative;
 }
 
 .info__school.visible {
@@ -15,21 +16,57 @@
     width: 90%;
 }
 
-.info__item{
+.info__item {
     display: flex;
     flex-direction: column;
-    border-left: 1px solid var(--border-color);
     padding-left: 1.5rem;
-    
 }
 
-.info__item__school{
+.info__item__school {
     font-weight: var(--weigth-600);
 }
 
-.info__item__description{
+.info__item__description {
     font-weight: var(--weigth-400);
     font-size: var(--smaller-font-size);
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
 }
 
+.circle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease; /* Solo la transición de opacidad, sin transformación */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+.circle.visible {
+    opacity: 1;
+}
+
+.circle.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.circle1 {
+    top: 3%;
+}
+
+.circle2 {
+    top: 22%;
+}
+
+.circle3 {
+    top: 41%;
+}
+
+.circle4 {
+    top: 65%;
+}

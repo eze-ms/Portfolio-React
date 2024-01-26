@@ -4,15 +4,15 @@
     gap: 10px; 
     opacity: 0; 
     transform: translateY(30px); 
-    transition: opacity 0.5s ease, transform 0.5s ease; 
+    /* transition: opacity 0.5s ease, transform 0.5s ease;  */
 }
 
-.skills.visible{
+.skills.visible {
     opacity: 1;
     transform: translateY(0); 
 }
 
-.info__item_skills{
+.info__item_skills {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     margin: 0;
@@ -23,8 +23,14 @@
     align-items: center;
     justify-content: center;
     padding: 20px 20px 20px;
+    opacity: 0; /* Añade esto para empezar con opacidad 0 */
+    transition: opacity 0.6s ease;
 }
-  
+
+.info__item_skills.visible {
+    opacity: 1;
+}
+
 .info__title_skills {
     height: 100px;
     display: flex;
@@ -34,11 +40,9 @@
     letter-spacing: 0;
     font-size: var(--smaller-font-size);
     font-weight: var(--weigth-400);
-    
 }
-  
+
 .info_icon>svg {
     color: var( --first-color);
     font-size: 2.5rem; 
 }
-  

@@ -1,26 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { otherPersonalSkills } from '../data';
 import './Others.css';
 
 function Others() {
-  useEffect(() => {
-    // Agrega la clase 'visible' después de un breve retraso
-    const timeoutId = setTimeout(() => {
-      const skillsElement = document.querySelector('.skills');
-      if (skillsElement) {
-        skillsElement.classList.add('visible');
-      }
-    }, 100); // Ajusta el valor del retraso según sea necesario
+  const [visibleSkills, setVisibleSkills] = useState(false);
 
-    return () => clearTimeout(timeoutId); // Limpia el timeout en caso de que el componente se desmonte
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setVisibleSkills(true);
+    }, 100);
+
+    const timeoutIds = otherPersonalSkills.map((_, index) =>
+      setTimeout(() => {
+        const skillsElement = document.querySelector(`.info__item_others_skills:nth-child(${index + 1})`);
+        if (skillsElement) {
+          skillsElement.classList.add('visible');
+        }
+      }, (index + 1) * 200)
+    );
+
+    return () => {
+      clearTimeout(timeoutId);
+      timeoutIds.forEach((id) => clearTimeout(id));
+    };
   }, []);
 
   return (
-    <div className="skills">
+    <div className={`others ${visibleSkills ? 'visible' : ''}`}>
       {otherPersonalSkills.map(({ title, icon }, index) => (
-        <div className="info__item_skills" key={index}>
+        <div className={`info__item_others_skills`} key={index}>
           <span className="info_icon">{icon}</span>
-          <span className="info__title_skills">{title}</span>
+          <span className="info__title_other_skills">{title}</span>
         </div>
       ))}
     </div>

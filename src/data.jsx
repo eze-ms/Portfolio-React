@@ -251,8 +251,19 @@ export const formation = [
     {
         id: 3,
         school: "Escola Espai",
-        description: "CFGS sistemas de Telecomunicaciones e Informáticos"
+        description: "CFGS Sistemas de Telecomunicaciones e Informáticos"
+    },
+    {
+      id: 4,
+      school: "IT Academy",
+      description: [
+        { title: "Bases de datos MySQL" },
+        { title: "SEO" },
+        { title: "Scrum" },
+        { title: "Metodologías Agile" }
+      ]
     }
+
 ];
 
 export const softSkills = [
