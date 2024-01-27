@@ -39,8 +39,13 @@
 .about__description_2,.about__description_3{
     width: 80%;
 }
-.nav__name_about{
-    font-weight: var(--weigth-600);
+
+.about__info{
+    margin-bottom: 2rem;
+}
+
+.nav_about{
+    margin-top: 1rem;
 }
 
 .nav__name_about {
@@ -48,9 +53,9 @@
     display: inline-block;
     border-bottom: 2px solid transparent;
     font-weight: var(--weigth-600);
-  }
+}
   
-  .nav__name_about::before {
+.nav__name_about::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -59,13 +64,22 @@
     height: 1.85px;
     background-color: var(--first-color);
     transition: width 0.3s ease, left 0.3s ease; 
-  }
-  
-  .nav__name_about:hover::before {
+    color: var(--first-color);
+}
+
+.nav__name_about:hover::before {
     width: 100%; 
     left: 0; 
-  }
+}
 
+.nav__link.active-nav .nav__name_about::before {
+    width: 100%;
+    left: 0;
+}
+.nav__link.active-nav .nav__name_about {
+    color: var(--first-color);
+    
+}
 
 .info_list_grid_about{
     display: flex;

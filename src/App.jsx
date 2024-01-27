@@ -22,6 +22,9 @@ function App() {
           <Route path="about/*" element={<About />} /> {/* El comodín * captura todas las subrutas de /about */}
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contacto" element={<Contacto />} />
+
+          <Route index element={<Home />} />
+
         </Routes>
 
         {/* <About /> */}

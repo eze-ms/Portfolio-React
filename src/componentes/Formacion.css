@@ -13,7 +13,6 @@
 .info__school.visible {
     opacity: 1;
     transform: translateY(0);
-    width: 90%;
 }
 
 .info__item {
@@ -30,7 +29,7 @@
     font-weight: var(--weigth-400);
     font-size: var(--smaller-font-size);
     margin-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     margin-top: 0.5rem;
 }
 
@@ -56,17 +55,17 @@
 }
 
 .circle1 {
-    top: 3%;
+    top: 2%;
 }
 
 .circle2 {
-    top: 22%;
+    top: 23%;
 }
 
 .circle3 {
-    top: 41%;
+    top: 62%;
 }
 
 .circle4 {
-    top: 65%;
+    top: 82%;
 }

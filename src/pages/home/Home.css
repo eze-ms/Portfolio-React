@@ -22,32 +22,44 @@
 }
 
 
-.home__title{
+.home__title,
+.home__title span {
     font-size: var(--h1-font-size);
-    font-weight: var(--weigth-600);
+}
+
+.home__title {
+    font-weight: var(--weigth-700);
     margin-bottom: 0.5rem;
     margin-top: 0;
 }
 
-.home__title span{
+.home__title span {
     position: relative;
-    font-size: var(--h1-font-size);
     line-height: 1.24;
     color: var(--first-color);
     font-weight: var(--weigth-800);
 }
 
-.home__data p,
-.home__subtitle{
-    font-size: var(--normal-font-size);
+.home__subtitle,.saludo{
+    font-size: var(--h2-font-size);
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     color: var(--title-color);
+    font-weight: var(--weigth-700);
+}
+
+.saludo{
+    margin-bottom: 0;
+}
+
+.home__description{
+    margin-bottom: 2rem;
 }
 
 .home__description{
     font-weight: 500;
     width: 88%;
+    font-size: var(--large-font-size);
 }
 
 .color__block{

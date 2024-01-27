@@ -1,7 +1,12 @@
-import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
-import { SiMysql, SiJquery, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { FaGithub, FaBootstrap } from 'react-icons/fa';
-import { SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
+import { FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
+import { FiFileText } from "react-icons/fi";
+import { BiLinkExternal } from "react-icons/bi";
+import { SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
+
+import Work1 from './assets/bmw_cover.webp';
+import Work2 from './assets/task_app.webp';
+import Work3 from './assets/vertigo_cover.webp';
+import Work4 from './assets/casa_cuadrau.webp';
 
 
 export const links = [
@@ -49,15 +54,9 @@ export const aboutLinks = [
     },
     {
         id: 4,
-        name: "Educación y Certificaciones",
+        name: "Educación y certificaciones",
         path: "/about/formation"
-    },
-    {
-        id: 5,
-        name: "SoftSkills",
-        path: "/about/softskills"
     }
-    
 ];
 
 export const personalInfo = [
@@ -241,75 +240,142 @@ export const formation = [
     {
         id: 1,
         school: "Escola Espai",
-        description: "Postgrado en Desarrollo Front-end"
+        description: "- Postgrado en Desarrollo Front-end"
     },
     {
-        id: 2,
-        school: "BAU",
-        description: "Diplomatura en Diseño Gráfico"
-    },
-    {
-        id: 3,
-        school: "Escola Espai",
-        description: "CFGS Sistemas de Telecomunicaciones e Informáticos"
-    },
-    {
-      id: 4,
+      id: 2,
       school: "IT Academy",
       description: [
-        { title: "Bases de datos MySQL" },
-        { title: "SEO" },
-        { title: "Scrum" },
-        { title: "Metodologías Agile" }
+        { title: "- Bases de datos MySQL" },
+        { title: "- SEO" },
+        { title: "- Scrum" },
+        { title: "- Metodologías Agile" }
       ]
-    }
-
-];
-
-export const softSkills = [
-    {
-        id: 1,
-        skill: "Comunicación efectiva",
-        
     },
-    {
-        id: 2,
-        skill: "Trabajo en equipo",
-        
-    },
+
     {
         id: 3,
-        skill: "Adaptabilidad al cambio",
-        
+        school: "BAU, Centro Universitario de Artes y Diseño",
+        description: "- Diplomatura en Diseño Gráfico"
     },
+    
     {
         id: 4,
-        skill: "Resolución de problemas",
-        
-    },
-    {
-        id: 5,
-        skill: "Aprendizaje continuo",
-        
-    },
-    {
-        id: 6,
-        skill: "Empatía",
-        
-    },
-    {
-        id: 7,
-        skill: "Gestión del tiempo",
-        
-    },
-    {
-        id: 8,
-        skill: "Atención al detalle",
-        
-    },
-    {
-        id: 9,
-        skill: "Capacidad analítica",
-        
+        school: "CESF, Centre d'Estudis Sant Francesc",
+        description: "- Técnico Superior en Sistemas de Telecomunicaciones e Informáticos"
     }
+   
+
 ];
+
+export const portfolio = [
+  {
+    id: '1',
+    img: 'Work1',
+    title: 'BMW Motorrad',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        desc: 'BMW Motorrad',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        desc: 'PHP, JavaScript, Base de Datos',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        desc: 'www.xxxxx.com',
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        desc: 'www.github.com/tuusuario/turepositorio',
+      },
+    ]
+  },
+  {
+    id: '2',
+    img: 'Work2',
+    title: 'Task App',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        desc: 'Task App',
+      },
+      {
+        icon: <FaReact />,
+        title: 'Lenguaje',
+        desc: 'React, JavaScript',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        desc: 'www.tuprojectoreact.com',
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        desc: 'www.github.com/tuusuario/proyecto-react',
+      },
+    ]
+  },
+  {
+    id: '3',
+    img: 'Work3',
+    title: 'Vertigo',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        desc: 'Vertigo',
+      },
+      {
+        icon: <FaJs />,
+        title: 'Lenguaje',
+        desc: 'JavaScript',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        desc: 'www.tuprojectojs.com',
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        desc: 'www.github.com/tuusuario/proyecto-javascript',
+      },
+    ]
+  },
+  {
+    id: '4',
+    img: 'Work4',
+    title: 'Casa Cuadrau',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        desc: 'Casa Cuadrau',
+      },
+      {
+        icon: <FaHtml5 />,
+        title: 'Lenguaje',
+        desc: 'HTML5, CSS3',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        desc: 'www.tuprojectohtmlcss.com',
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        desc: 'www.github.com/tuusuario/proyecto-html-css',
+      },
+    ]
+  },
+];
+
