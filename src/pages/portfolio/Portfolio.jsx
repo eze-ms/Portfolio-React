@@ -1,8 +1,11 @@
-import React from 'react'
-import { portfolio } from '../../data'
-import PortfolioItem from '../../componentes/PortfolioItem'
+import React from 'react';
+import { portfolio } from '../../data';
+import PortfolioItem from '../../componentes/PortfolioItem';
+import "./Portfolio.css"
 
 const Portfolio = () => {
+
+  
   return (
       <section className="portfolio section">
         <h2 className="section__title"><span>Portfolio</span></h2>

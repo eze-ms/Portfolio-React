@@ -271,7 +271,7 @@ export const formation = [
 export const portfolio = [
   {
     id: '1',
-    img: 'Work1',
+    img: Work1,
     title: 'BMW Motorrad',
     details: [
       {
@@ -298,7 +298,7 @@ export const portfolio = [
   },
   {
     id: '2',
-    img: 'Work2',
+    img: Work2,
     title: 'Task App',
     details: [
       {
@@ -325,7 +325,7 @@ export const portfolio = [
   },
   {
     id: '3',
-    img: 'Work3',
+    img: Work3,
     title: 'Vertigo',
     details: [
       {
@@ -352,7 +352,7 @@ export const portfolio = [
   },
   {
     id: '4',
-    img: 'Work4',
+    img: Work4,
     title: 'Casa Cuadrau',
     details: [
       {
