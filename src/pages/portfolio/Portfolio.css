@@ -61,7 +61,7 @@
     position: relative;
 }
 
-.moldal__close{
+.modal__close{
     position: absolute;
     top: -3.5%;
     right: -8.5%;
