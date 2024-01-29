@@ -1,11 +1,11 @@
-import { FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
-import { FiFileText } from "react-icons/fi";
+import { FaLinkedin, FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
+import { FiLink, FiFileText } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
 
-import Work1 from './assets/bmw_cover.webp';
+import Work1 from './assets/bmw_c2.webp';
 import Work2 from './assets/task_app.webp';
-import Work3 from './assets/vertigo_cover.webp';
+import Work3 from './assets/vertigo_cover_4.webp';
 import Work4 from './assets/casa_cuadrau.webp';
 
 
@@ -24,7 +24,7 @@ export const links = [
     },
     {   
         id: 3, 
-        name: "Portfolio", 
+        name: "Proyectos", 
         icon: <FaFolderOpen className='nav__icon' />, 
         path: "/portfolio" 
     },{   
@@ -60,55 +60,67 @@ export const aboutLinks = [
 ];
 
 export const personalInfo = [
-    {
-      id: 1,
-      title: 'Nombre',
-      description: 'Ezequiel',
-      isLink: false,
-    },
-    {
-      id: 2,
-      title: 'Apellidos',
-      description: 'Macchi Seoane',
-      isLink: false,
-    },
-    {
-      id: 3,
-      title: 'Pais',
-      description: 'España',
-      isLink: false,
-    },
-    {
-      id: 4,
-      title: 'Ciudad',
-      description: 'Barcelona',
-      isLink: false,
-    },
-    {
-      id: 5,
-      title: 'Teléfono',
-      description: '691 569 610',
-      isLink: false,
-    },
-    {
-      id: 6,
-      title: 'Email',
-      description: 'macchiezequiel@gmail.com',
-      isLink: false,
-    },
-    {
-      id: 7,
-      title: 'LinkedIn',
-      description: 'https://www.linkedin.com/in/ezems/',
-      isLink: true,
-    },
-    {
-      id: 8,
-      title: 'GitHub',
-      description: 'https://github.com/eze-ms',
-      isLink: true,
-    },
+  {
+    id: 1,
+    title: 'Nombre',
+    description: 'Ezequiel',
+  },
+  {
+    id: 2,
+    title: 'Apellidos',
+    description: 'Macchi Seoane',
+  },
+  {
+    id: 3,
+    title: 'Pais',
+    description: 'España',
+  },
+  {
+    id: 4,
+    title: 'Ciudad',
+    description: 'Barcelona',
+  },
+  {
+    id: 5,
+    title: 'Teléfono',
+    description: '691 569 610',
+  },
+  {
+    id: 6,
+    title: 'Email',
+    description: 'macchiezequiel@gmail.com',
+  },
+  {
+    id: 7,
+    title: (
+      <>
+        Linkedin <FaLinkedin />
+      </>
+    ),
+    description: (
+      <a href="https://www.linkedin.com/in/ezems/" target="_blank" rel="noopener noreferrer" className="item__details">
+        <FiLink />
+      </a>
+    ),
+  }, // Añadida coma aquí
+  
+  {
+    id: 8,
+    title: (
+      <>
+        GitHub <FaGithub />
+      </>
+      
+    ),
+    description: (
+      <a href="https://github.com/eze-ms/" target="_blank" rel="noopener noreferrer" className="item__details">
+        <FiLink />
+      </a>
+    ),
+    // isLink: true,
+  },
 ];
+
 
 export const personalSkills = [
     {
@@ -277,24 +289,36 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
+        isLink: false,
         desc: 'BMW Motorrad',
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
-        desc: 'PHP, JavaScript, Base de Datos',
+        isLink: false,
+        desc: 'PHP, JavaScript, BBDD',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
-        desc: 'www.xxxxx.com',
+        isLink: true,
+        desc: (
+          <a href="http://www.demomotorrad.com.mialias.net/index.php" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
       {
         icon: <FaGithub />,
         title: 'GitHub',
-        desc: 'www.github.com/tuusuario/turepositorio',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Demo-Motorrad" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
-    ]
+    ],
   },
   {
     id: '2',
@@ -304,24 +328,36 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
+        isLink: false,
         desc: 'Task App',
       },
       {
-        icon: <FaReact />,
+        icon: <FaCode />,
         title: 'Lenguaje',
-        desc: 'React, JavaScript',
+        isLink: false,
+        desc: 'React',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
-        desc: 'www.tuprojectoreact.com',
+        isLink: true,
+        desc: (
+          <a href="https://taskappdev.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
       {
         icon: <FaGithub />,
         title: 'GitHub',
-        desc: 'www.github.com/tuusuario/proyecto-react',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/TaskApp" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
-    ]
+    ],
   },
   {
     id: '3',
@@ -331,24 +367,36 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
+        isLink: false,
         desc: 'Vertigo',
       },
       {
-        icon: <FaJs />,
+        icon: <FaCode />,
         title: 'Lenguaje',
+        isLink: false,
         desc: 'JavaScript',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
-        desc: 'www.tuprojectojs.com',
+        isLink: true,
+        desc: (
+          <a href="https://eze-ms.github.io/vertigo-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
       {
         icon: <FaGithub />,
         title: 'GitHub',
-        desc: 'www.github.com/tuusuario/proyecto-javascript',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/vertigo-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
-    ]
+    ],
   },
   {
     id: '4',
@@ -358,24 +406,37 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
+        isLink: false,
         desc: 'Casa Cuadrau',
       },
       {
-        icon: <FaHtml5 />,
+        icon: <FaCode />,
         title: 'Lenguaje',
+        isLink: false,
         desc: 'HTML5, CSS3',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
-        desc: 'www.tuprojectohtmlcss.com',
+        isLink: true,
+        desc: (
+          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
       {
         icon: <FaGithub />,
         title: 'GitHub',
-        desc: 'www.github.com/tuusuario/proyecto-html-css',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
       },
-    ]
+    ],
   },
 ];
+
 

@@ -6,7 +6,8 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <section className='home section grid'>
+    <div id="home">
+      <section className='home section grid'>
       <img src={Profile} alt='' className='home__img' />
        
       <div className="home__content">
@@ -26,7 +27,9 @@ const Home = () => {
       </div>
 
       <div className="color__block"></div>
-    </section>
+      </section>
+    </div>
+    
   );
 };
 export default Home

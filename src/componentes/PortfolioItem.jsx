@@ -24,7 +24,7 @@ function PortfolioItem({ img, title, details }) {
               alt="" 
               className="modal__close" 
               onClick={toogleModal} />
-            <h3 className="modal__title">{title}</h3>
+            <h4 className="modal__title">{title}</h4>
             
             <ul className='modal__list grid'>
               {details.map(({ icon, title, desc }, index) => {
@@ -32,7 +32,7 @@ function PortfolioItem({ img, title, details }) {
                   <li className="modal__item" key={index}>
                     <span className='item__icon'>{icon}</span>
                     <div>
-                      <span className="item__title">{title}</span>
+                      <span className="item__title">{title}: </span>
                       <span className="item__details">{desc}</span>
                     </div>
                   </li>
