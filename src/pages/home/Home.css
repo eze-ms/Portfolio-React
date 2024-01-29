@@ -71,3 +71,30 @@
     left: -83%;
     transform: rotate(-15deg);
 }
+.box__content-button-socials{
+    display: flex;
+    align-items: center;
+}
+
+.contact__socials-home{
+    display: flex;
+    column-gap: 16px;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.contact__socials-link{
+    background-color: var(--container-color);
+    color: var(--title-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease;
+}
+
+.contact__socials-link:hover{
+    background-color: var(--first-color);
+    color: var(--text-white);
+}
