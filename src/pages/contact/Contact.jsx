@@ -17,11 +17,11 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <section className="contact section">
-      <h2 className="section__title"><span>Contacto</span></h2>
+      <h2 className="section__title">Contacto</h2>
 
       <div className="contact__container container grid">
         <div className="contact__data">
-          <h3 className="contact__title">No seas tímido!</h3>
+          <h3 className="contact__title">¡No seas tímid@!</h3>
           <p className="contact__description">
             No dudes en ponerte en contacto conmigo. Siempre estoy abierto a discutir sobre nuevas propuestas, ideas creativas u oportunidades para aportar mejoras a los proyectos.
           </p>

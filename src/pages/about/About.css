@@ -6,8 +6,8 @@
   }
   
   .about__img {
-    width: 60%; /* Ajustar la imagen al 100% del ancho de su contenedor */
-    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+    width: 60%; 
+    height: auto; 
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3);
@@ -22,8 +22,11 @@
 }
 
 .box_about__me .section__title{
-    font-size: var(--h2-font-size);   
     margin-bottom: 0;
+}
+
+.section__title>span{
+    color: var(--first-color);
 }
 
 .about__description_1,.about__description_2,.about__description_3{ 

@@ -16,6 +16,10 @@ import Theme5 from './assets/orange.svg';
 import Theme6 from './assets/purple.svg';
 import Theme7 from './assets/red.svg';
 import Theme8 from './assets/blueviolet.svg';
+import Theme9 from './assets/white.svg';
+import Theme10 from './assets/black.svg';
+
+
 
 export const links = [
     {   
@@ -487,5 +491,15 @@ export const themes = [
     id: 8,
     img: Theme8,
     color: 'hsl(252, 100%, 79%)',
+  },
+  {
+    id: 9,
+    img: Theme9,
+    color: 'hsl(0, 0%, 100%)',
+  },
+  {
+    id: 10,
+    img: Theme10,
+    color: 'hsl(0, 0%, 40%)',
   }
 ]

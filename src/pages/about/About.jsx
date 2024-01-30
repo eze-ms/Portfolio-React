@@ -22,10 +22,12 @@ const About = () => {
   return (
     <div id="about">
        <section className='about section grid'>
+       <h3 className='section__title'>Acerca de <span>mí</span></h3>
         <div className='about__container'>
+        
+
           <img src={Profile} alt='' className='about__img' />
           <div className="box_about__me">
-            <h3 className='section__title'>Sobre <span>de mí</span></h3>
             <div className='about__info'>
               <p className='about__description_1'>
                 Como desarrollador front-end junior, poseo un impresionante conjunto de habilidades en HTML, CSS,

@@ -9,7 +9,9 @@
     margin-bottom: 1rem;
     text-align: left;
     margin-top: 0;
+    color: var(--first-color);
 }
+
 
 .contact__description{
     font-size: var(--small-font-size);
