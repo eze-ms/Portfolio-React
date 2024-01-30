@@ -16,6 +16,7 @@ const Themes = () => {
 
     useEffect(()=>{
         document.documentElement.style.setProperty('--first-color', color);
+        localStorage.setItem('color', color);
     }, [color]);
 
 
@@ -32,7 +33,7 @@ const Themes = () => {
                     <BsMoon />
                 </div>
                 
-                <h3 className="style__switcher-title">Style Switcher</h3>
+                <h3 className="style__switcher-title">Cambiar estilo</h3>
                 <div className="style__switcher-items">
                     {themes.map((theme, index) => {
                         return <ThemeItem key={index} {...theme} changeColor={changeColor}  />;

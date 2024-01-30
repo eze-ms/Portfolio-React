@@ -24,7 +24,7 @@
 
 .style__switcher-items{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 4px;
     row-gap: 8px;
 }

@@ -8,16 +8,14 @@ import Work2 from './assets/task_app.webp';
 import Work3 from './assets/vertigo_cover_4.webp';
 import Work4 from './assets/casa_cuadrau.webp';
 
-import Theme1 from './assets/blue.png';
-import Theme2 from './assets/goldenrod.png';
-import Theme3 from './assets/green.png';
-import Theme4 from './assets/magenta.png';
-import Theme5 from './assets/orange.png';
-import Theme6 from './assets/purple.png';
-import Theme7 from './assets/red.png';
-import Theme8 from './assets/blueviolet.png';
-import Theme9 from './assets/yellow.png';
-import Theme10 from './assets/yellowgreen.png';
+import Theme1 from './assets/blue.svg';
+import Theme2 from './assets/goldenrod.svg';
+import Theme3 from './assets/green.svg';
+import Theme4 from './assets/magenta.svg';
+import Theme5 from './assets/orange.svg';
+import Theme6 from './assets/purple.svg';
+import Theme7 from './assets/red.svg';
+import Theme8 from './assets/blueviolet.svg';
 
 export const links = [
     {   
@@ -453,51 +451,41 @@ export const themes = [
   {
     id: 1,
     img: Theme1,
-    color: 'hsl(252, 35%, 51%)',
+    color: 'hsl(229, 61%, 37%)',
   },
   {
     id: 2,
     img: Theme2,
-    color: 'hsl(4, 93%, 54%)',
+    color: 'hsl(45 99% 48%)',
   },
   {
     id: 3,
     img: Theme3,
-    color: 'hsl(271, 76%, 53%)',
+    color: 'hsl(154 65% 60%)',
   },
   {
     id: 4,
     img: Theme4,
-    color: 'hsl(225, 73%, 57%)',
+    color: 'hsl(320, 67%, 73%)',
   },
   {
     id: 5,
     img: Theme5,
-    color:'hsl(43, 74%, 49%)',
+    color: 'hsl(17, 87%, 59%)',
   },
   {
     id: 6,
     img: Theme6,
-    color: 'hsl(339, 81%, 66%)',
+    color: 'hsl(251, 99%, 69%)',
   },
   {
     id: 7,
     img: Theme7,
-    color: 'hsl(80, 61%, 50%)',
+    color: 'hsl(351, 80%, 60%)',
   },
   {
     id: 8,
     img: Theme8,
-    color:'hsl(80, 61%, 50%)',
-  },
-  {
-    id: 9,
-    img: Theme9,
-    color:'hsl(80, 61%, 50%)',
-  },
-  {
-    id: 10,
-    img: Theme10,
-    color:'hsl(80, 61%, 50%)',
+    color: 'hsl(252, 100%, 79%)',
   }
 ]
