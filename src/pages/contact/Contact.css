@@ -116,10 +116,18 @@
     resize: none;
     height: 160px;
     width: 100%;
-    margin-bottom: 3rem;
+
 }
 
 .contact__button-icon{
     font-size: var(--h3-font-size);
     line-height: 64px;
+}
+
+.error-message{
+    color: var(--first-color);
+}
+
+.send{
+    margin-top: 3rem;
 }

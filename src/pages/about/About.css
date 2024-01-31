@@ -34,17 +34,10 @@
     font-size: var(--normal-font-size);
     font-weight: var(--weigth-500);
 }
-.about__description_1{
-    width: 80%;
-
-}
-
-.about__description_2,.about__description_3{
-    width: 80%;
-}
 
 .about__info{
     margin-bottom: 2rem;
+    width: 80%;
 }
 
 .nav_about{

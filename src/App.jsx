@@ -1,8 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-
-
-// import React from 'react';
+import React from 'react';
 import Themes from './componentes/Themes';
 import NavBar from './componentes/NavBar';  
 import Home from './pages/home/Home';
@@ -10,11 +8,7 @@ import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contacto from './pages/contact/Contact';
 
-
-
 function App() { 
-
-
   return (
     <div className="App">
       <main>
@@ -27,13 +21,18 @@ function App() {
           <Route path="contacto" element={<Contacto />} />
 
           <Route index element={<Home />} />
-
         </Routes>
 
-        {/* <About /> */}
+        {/* <Home /> 
+        <About /> 
+        <Portfolio /> 
+        <Contacto />  */}
+
+
+
+
       </main>
     </div>
   );
 }
-
 export default App;

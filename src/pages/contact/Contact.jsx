@@ -1,20 +1,49 @@
-import React from 'react'
-import{
-  FaEnvelopeOpen,
-  FaPhoneSquareAlt,
-  FaLinkedin,
-  FaGithub
-} from 'react-icons/fa';
-
-import{
-  FiSend
-}from 'react-icons/fi'
+import React from 'react';
+import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FiSend } from 'react-icons/fi';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 import "./Contact.css";
 
-
-
 const Contact = () => {
+  // Define el esquema de validación con Yup
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required('Campo obligatorio'),
+    email: Yup.string().email('Formato de correo no válido').required('Campo obligatorio'),
+    subject: Yup.string().required('Campo obligatorio'),
+    message: Yup.string().required('Campo obligatorio'),
+  });
+
+  // Configura Formik
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    },
+    validationSchema: validationSchema,
+
+    validate: (values) => {
+      const errors = {};
+  
+      // Validación del correo electrónico
+      if (!values.email) {
+        errors.email = 'Campo obligratorio';
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
+        errors.email = 'Correo electrónico inválido';
+      }
+  
+      // Otras validaciones para los demás campos
+  
+      return errors;
+    },
+    onSubmit: (values) => {
+    console.log(values);
+    },
+  });
+
   return (
     <section className="contact section">
       <h2 className="section__title">Contacto</h2>
@@ -56,37 +85,68 @@ const Contact = () => {
           </div>
         </div>
         
-        <form className="contact__form">
+        <form className="contact__form" onSubmit={formik.handleSubmit}>
             <div className="form__input-group">
               <div className="form__input-div">
                 <input 
                   type="text" 
                   placeholder='Nombre' 
-                  className='form__control'/>
+                  className='form__control'
+                  name="name"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.name}
+                />
+                {formik.touched.name && formik.errors.name && (
+                  <div className="error-message">{formik.errors.name}</div>
+                )}
               </div>
               <div className="form__input-div">
                 <input 
                   type="email" 
                   placeholder='Email' 
-                  className='form__control'/>
+                  name='email'
+                  className='form__control'
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.email}
+                />
+                {formik.touched.email && formik.errors.email && (
+                  <div className="error-message">{formik.errors.email}</div>
+                )}
               </div>
+
               <div className="form__input-div">
                 <input 
                   type="text" 
-                  placeholder='Asunto' 
-                  className='form__control'/>
+                  placeholder="Asunto" 
+                  className="form__control"
+                  name="subject"  
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.subject}
+                />
+                {formik.touched.subject && formik.errors.subject && (
+                  <div className="error-message">{formik.errors.subject}</div>
+                )}
               </div>
             </div>
 
             <div className="form__input-div-txt">
-                <textarea 
-                  type="text" 
-                  placeholder="Mensaje" 
-                  className="form__control textarea">
-                </textarea>
+              <textarea
+                  placeholder="Mensaje"
+                  className="form__control textarea"
+                  name="message"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.message}
+              />
+              {formik.touched.message && formik.errors.message && (
+                <div className="error-message">{formik.errors.message}</div>
+              )}
             </div>
 
-            <button className='button'>
+            <button className='button send'>
               Enviar mensaje
               <span className="button__icon contact__button-icon">
                   <FiSend/>
@@ -100,3 +160,4 @@ const Contact = () => {
 }
 
 export default Contact
+
