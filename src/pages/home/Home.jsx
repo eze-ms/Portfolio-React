@@ -1,13 +1,8 @@
 import React from 'react'
-import Profile from '../../assets/home.jpg'
+import Profile from '../../assets/trabajo1.png'
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from "react-icons/fa";
 import "./Home.css"
-import{
- 
-  FaLinkedin,
-  FaGithub
-} from 'react-icons/fa';
+import{ FaArrowRight,FaLinkedin,FaGithub } from 'react-icons/fa';
 
 const Home = () => {
   return (

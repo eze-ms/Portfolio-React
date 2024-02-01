@@ -1,3 +1,6 @@
+.nav{
+    z-index: 1000;
+}
 .nav__menu{
     position: fixed;
     inset-block: 0;
@@ -6,7 +9,6 @@
     width: 100%;
     padding: 3.75rem 1.875rem;
     transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    z-index: 100;
 }
 
 .show-menu{
@@ -19,6 +21,8 @@
     column-gap: 24px;
     border-bottom: 1px solid var(--border-color);
     padding-block: 14px;
+    cursor: pointer;
+
 }
 
 .nav__icon,
@@ -31,8 +35,8 @@
     font-weight: var(--weight-500); 
 }
 
-.active-nav .nav__icon,
-.active-nav .nav__name{
+.nav__link.active .nav__icon,
+.nav__link.active .nav__name{
     color: var(--first-color);
 }
 

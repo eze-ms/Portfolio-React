@@ -1,8 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Themes from './componentes/Themes';
 import NavBar from './componentes/NavBar';  
+import { Element } from 'react-scroll';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
@@ -12,21 +12,38 @@ function App() {
   return (
     <div className="App">
       <main>
+        
         <NavBar /> 
         <Themes />
+         {/*
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="about/*" element={<About />} /> {/* El comodín * captura todas las subrutas de /about */}
+          <Route path="about/*" element={<About />} /> 
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contacto" element={<Contacto />} />
 
           <Route index element={<Home />} />
-        </Routes>
+        </Routes> */}
 
-        {/* <Home /> 
-        <About /> 
-        <Portfolio /> 
-        <Contacto />  */}
+     <NavBar />
+
+    <Element name="home" className="element" >
+      <Home />
+    </Element>
+    <Element name="about" className="element" >
+      <About />  
+    </Element>
+    <Element name="portfolio" className="element" >
+      <Portfolio /> 
+    </Element>
+    <Element name="contacto" className="element" >
+      <Contacto />  
+    </Element>       
+        
+           
+          
+            
+        
 
 
 

@@ -1,7 +1,8 @@
 .home{
-    grid-template-columns: 4.32fr 7.68fr;
+    grid-template-columns: 7.32fr 7.68fr;
     align-items: center;
     padding: 40px;
+    margin-top: 8rem;
     /* height: 100vh; */
 }
 
@@ -9,8 +10,9 @@
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3);
+    /* box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3); */
     z-index: 1;
+    margin-inline: auto;
 } 
 
 .home__data{

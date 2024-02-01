@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { links } from '../data';
 import "./NavBar.css"
 
@@ -14,13 +14,17 @@ const NavBar = () => {
                     {links.map(({ name, icon, path }, index)=>{
                         return (
                             <li className='nav__item' key={index}>
-                                <NavLink to={path} className={({isActive}) =>
-                                    isActive? 'nav__link active-nav' : 'nav__link'
-                                    }
+                                <Link 
+                                    spy={true} 
+                                    smooth={true} 
+                                    offset={50} 
+                                    duration={500} 
+                                    to={path} 
+                                    className="nav__link"
                                 >
                                     {icon}
                                     <h3 className='nav__name'>{name}</h3>
-                                </NavLink>
+                                </Link>
                             </li>
                         )
                     })}

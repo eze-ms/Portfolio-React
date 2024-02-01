@@ -26,24 +26,24 @@ export const links = [
         id: 1, 
         name: "Home", 
         icon: <FaHome  className='nav__icon' />, 
-        path: "/home" 
+        path: "home" 
     },
     {   
         id: 2, 
         name: "About", 
         icon: <FaUser className='nav__icon' />, 
-        path: "/about" 
+        path: "about" 
     },
     {   
         id: 3, 
         name: "Proyectos", 
         icon: <FaFolderOpen className='nav__icon' />, 
-        path: "/portfolio" 
+        path: "portfolio" 
     },{   
         id: 4, 
         name: "Contacto", 
         icon: <FaEnvelopeOpen className='nav__icon' />,
-        path: "/contacto" 
+        path: "contacto" 
     },
    
 ];
