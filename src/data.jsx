@@ -19,6 +19,17 @@ import Theme8 from './assets/blueviolet.svg';
 import Theme9 from './assets/white.svg';
 import Theme10 from './assets/black.svg';
 
+import Theme1Motion from './assets/blue.gif';
+
+import Theme3Motion from './assets/green.gif';
+import Theme4Motion from './assets/magenta.gif';
+import Theme5Motion from './assets/orange.gif';
+import Theme6Motion from './assets/purple.gif';
+import Theme7Motion from './assets/red.gif';
+
+import Theme9Motion from './assets/white.gif';
+import Theme10Motion from './assets/black.gif';
+
 
 
 export const links = [
@@ -132,7 +143,6 @@ export const personalInfo = [
     // isLink: true,
   },
 ];
-
 
 export const personalSkills = [
     {
@@ -502,4 +512,48 @@ export const themes = [
     img: Theme10,
     color: 'hsl(0, 0%, 40%)',
   }
+];
+
+export const themeMotion = [
+  {
+    id: 1,
+    img: Theme1Motion,
+  },
+  
+
+
+
+  {
+    id: 3,
+    img: Theme3Motion,
+  },
+  {
+    id: 4,
+    img: Theme4Motion,
+  },
+  {
+    id: 5,
+    img: Theme5Motion,
+  },
+  {
+    id: 6,
+    img: Theme6Motion,
+  },
+  {
+    id: 7,
+    img: Theme7Motion,
+  },
+  
+
+
+    
+  {
+    id: 9,
+    img: Theme9Motion,
+  },
+  {
+    id: 10,
+    img: Theme10Motion,
+  }
 ]
+
