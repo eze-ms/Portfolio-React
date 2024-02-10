@@ -99,3 +99,27 @@
     background-color: var(--first-color);
     color: var(--text-white);
 }
+
+
+@media screen and (max-width: 900px) {
+    
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .home__data{
+        padding:3rem;
+    }
+
+    .box__content-button-socials{
+        flex-direction: column;
+    }
+
+    .box__content-button-socials>.button{
+        margin-bottom: 2rem;
+    }
+  
+}

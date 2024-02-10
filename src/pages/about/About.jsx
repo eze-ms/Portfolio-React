@@ -48,7 +48,7 @@ const About = () => {
               Download CV <span className='button__icon'><FaDownload /></span>
             </a>
             <nav className='nav_about'>
-              <div className={`${showAbout ? 'nav__menu show-menu' : 'nav__menu'}`}>
+              <div className={`${showAbout ? 'nav__menu_about show-menu' : 'nav__menu_about'}`}>
                 <ul className='info_list_grid_about'>
                   {aboutLinks.map(({ name, path }, index) => (
                     <li className='nav__item' key={index}>
@@ -65,7 +65,7 @@ const About = () => {
               </div>
 
               <div
-                className={`${showAbout ? 'nav__toggle animate-toggle' : 'nav__toggle'}`}
+                className={`${showAbout ? 'nav__toggle_about animate-toggle' : 'nav__toggle_about'}`}
                 onClick={() => setShowAbout(!showAbout)}
               ></div>
             </nav>

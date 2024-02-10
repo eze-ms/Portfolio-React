@@ -99,5 +99,18 @@
 }
 
 
+@media screen and (max-width: 900px) {
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .info_list_grid_about{
+        flex-direction: column;
+    }
+}
+
 
 
