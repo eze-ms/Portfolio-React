@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Profile from '../../assets/purple.gif';
 import "./Home.css"
 import{ FaArrowRight,FaLinkedin,FaGithub } from 'react-icons/fa';
 
@@ -8,6 +9,7 @@ const Home = ({gif}) => {
   return (
     <div id="home">
       <section className='home section grid'>
+      {!gif && <img src={Profile} alt='' className='gif' />}
       {gif && <img src={gif} alt="Theme Motion" className="theme__motion" />}
 
       <div className="home__content">

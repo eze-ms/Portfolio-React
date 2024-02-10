@@ -26,7 +26,7 @@
 }
 
 .portfolio__hover{
-    background-color:  #8a2ce2f0;
+    background-color:  var(--first-color);
     position: absolute;
     inset: 0;
     display: grid;
