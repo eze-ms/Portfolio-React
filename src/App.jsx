@@ -3,7 +3,7 @@ import React from 'react';
 import Themes from './componentes/Themes';
 import NavBar from './componentes/NavBar';  
 import { Element } from 'react-scroll';
-import Home from './pages/home/Home';
+// import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contacto from './pages/contact/Contact';
@@ -15,21 +15,11 @@ function App() {
         
         <NavBar /> 
         <Themes />
-         {/*
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="about/*" element={<About />} /> 
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="contacto" element={<Contacto />} />
+        
 
-          <Route index element={<Home />} />
-        </Routes> */}
-
-     <NavBar />
-
-    <Element name="home" className="element" >
+    {/* <Element name="home" className="element" >
       <Home />
-    </Element>
+    </Element> */}
     <Element name="about" className="element" >
       <About />  
     </Element>
