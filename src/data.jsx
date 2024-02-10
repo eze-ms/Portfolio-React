@@ -3,7 +3,7 @@ import { FiLink, FiFileText } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
 
-import Work1 from './assets/bmw_c2.webp';
+import Work1 from './assets/cover_bmw.png';
 import Work2 from './assets/task_app.webp';
 import Work3 from './assets/vertigo_cover_4.webp';
 import Work4 from './assets/casa_cuadrau.webp';
@@ -307,6 +307,7 @@ export const portfolio = [
     id: '1',
     img: Work1,
     title: 'BMW Motorrad',
+    text: 'Réplica del sitio web de BMW desarrollado en PHP. Incluye características como gestión de sesiones, validación de formularios, creación de la landing page y sistemas de registro e inicio de sesión para seguridad. También incorpora una Base de Datos y permite filtrar modelos por categorías.',
     details: [
       {
         icon: <FiFileText />,
@@ -346,6 +347,8 @@ export const portfolio = [
     id: '2',
     img: Work2,
     title: 'Task App',
+    text: 'Esta es una aplicación de gestión de tareas desarrollada en React. Se implementa Redux con un CRUD completo para gestionar el estado de las tareas. Además, se emplea React Router para administrar la navegación entre diferentes vistas, así como la implementación de componentes reutilizables para el diseño de la interfaz.',
+
     details: [
       {
         icon: <FiFileText />,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Close from '../assets/close.svg';
 
-function PortfolioItem({ img, title, details }) {
+function PortfolioItem({ img, title, text, details }) {
   const [modal, setModal] =useState(false);
 
   const toogleModal = () => {
@@ -14,7 +14,12 @@ function PortfolioItem({ img, title, details }) {
 
       <div className="portfolio__hover" onClick={toogleModal}>
         <h3 className="portfolio__title">{title}</h3>
+        <div>
+        <p className='description'>{text}</p>
       </div>
+      </div>
+      
+
 
       {modal && (
         <div className="portfolio__modal">
@@ -45,6 +50,7 @@ function PortfolioItem({ img, title, details }) {
         </div>
       )}
     </div>
+    
   );
 }
 

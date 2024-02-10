@@ -6,7 +6,6 @@ import "./Portfolio.css";
 const Portfolio = () => {
   
 return (
-  // <div id="portfolio">
     <section className="portfolio section">
       <h2 className="section__title">Mis<span> Proyectos</span></h2>
       <p className='subtitle'>"Detrás de cada proyecto hay un mundo por descubrir"</p>
@@ -16,8 +15,6 @@ return (
          })}
        </div>
     </section>
-//  </div>
-      
   )
 }
 
