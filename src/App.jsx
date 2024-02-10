@@ -12,32 +12,20 @@ function App() {
   return (
     <div className="App">
       <main>
-        
         <NavBar /> 
         <Themes />
-        
-
-    {/* <Element name="home" className="element" >
-      <Home />
-    </Element> */}
-    <Element name="about" className="element" >
-      <About />  
-    </Element>
-    <Element name="portfolio" className="element" >
-      <Portfolio /> 
-    </Element>
-    <Element name="contacto" className="element" >
-      <Contacto />  
-    </Element>       
-        
-           
-          
-            
-        
-
-
-
-
+        {/* <Element name="home" className="element" >
+        <Home />
+        </Element> */}
+        <Element name="about" className="element" >
+          <About />  
+        </Element>
+        <Element name="portfolio" className="element" >
+          <Portfolio /> 
+        </Element>
+        <Element name="contacto" className="element" >
+          <Contacto />  
+        </Element>       
       </main>
     </div>
   );
