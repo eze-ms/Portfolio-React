@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { themes } from '../data';
 import ThemeItem from './ThemesItem';
 import { FaCog } from 'react-icons/fa';
 import { BsSun, BsMoon } from 'react-icons/bs'; 
+import Home from '../pages/home/Home';
 import './Themes.css';
 
 const getStorageColor = () => {
@@ -25,57 +26,68 @@ const Themes = () => {
     const [showSwitcher, setShowSwitcher] = useState(false);
     const [color, setColor] = useState(getStorageColor());
     const [theme, setTheme] = useState(getStorageTheme());
+    const [gif, setGif] = useState('');
 
     const changeColor = (color) => {
         setColor(color);
     };
 
     const toggleTheme = () => {
-        if (theme==='light-theme'){
-            setTheme('dark-theme')
-        }
-        else {
+        if (theme === 'light-theme') {
+            setTheme('dark-theme');
+        } else {
             setTheme('light-theme');
-        };
+        }
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         document.documentElement.style.setProperty('--first-color', color);
         localStorage.setItem('color', color);
     }, [color]);
+    
 
-    useEffect(()=>{
+    useEffect(() => {
         document.documentElement.className = theme;
         localStorage.setItem('theme', theme);
-    }, [theme]);
+    }, [theme]);   
+
+    useEffect(() => {
+        const selectedTheme = themes.find(theme => theme.color === color);
+        setGif(selectedTheme?.gif || '');
+    }, [color]);
 
     return (
-        <div>
+        <div content-show-theme="true">
             <div className={`style__switcher ${showSwitcher ? 'show-switcher' : ''}`}>
+
                 <div 
                     className="style__switcher-toogler" 
-                    onClick={() =>setShowSwitcher (!showSwitcher)}
-                >
-                    <FaCog />
+                    onClick={() => setShowSwitcher(!showSwitcher)}><FaCog />
                 </div>
-                <div className="theme__toggler" onClick={toggleTheme}>
-                    {theme === 'light-theme' ? <BsMoon /> : <BsSun/>}
+
+                <div 
+                    className="theme__toggler" 
+                    onClick={toggleTheme}>{theme === 'light-theme' ? <BsMoon /> : <BsSun/>}
                 </div>
                 
                 <h3 className="style__switcher-title">Cambiar estilo</h3>
+
                 <div className="style__switcher-items">
                     {themes.map((theme, index) => {
-                        return <ThemeItem key={index} {...theme} changeColor={changeColor}  />;
+                        return <ThemeItem key={index} {...theme} changeColor={changeColor} gif={gif} />;
                     })}
                 </div>
                 
                 <div 
-                className="style__switcher-close"
-                onClick={() =>setShowSwitcher (!showSwitcher)}
-                 > &times;</div>
-            </div>
-        </div>
-    )
-}
+                    className="style__switcher-close" 
+                    onClick={() => setShowSwitcher(!showSwitcher)}> &times;
+                </div>
 
-export default Themes
+            </div>
+
+            <Home gif={gif} /> {/* Pasa la URL del GIF como una prop al componente Home */}
+
+        </div>
+    );
+}
+export default Themes;

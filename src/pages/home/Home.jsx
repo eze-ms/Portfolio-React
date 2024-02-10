@@ -1,15 +1,15 @@
 import React from 'react'
-import Profile from '../../assets/purple.gif';
 import { Link } from 'react-router-dom';
 import "./Home.css"
 import{ FaArrowRight,FaLinkedin,FaGithub } from 'react-icons/fa';
 
-const Home = () => {
+const Home = ({gif}) => {
+  console.log('GIF:', gif); // Verifica si se muestra la URL del gif
   return (
     <div id="home">
       <section className='home section grid'>
-      <img src={Profile} alt='' className='home__img' />
-       
+      {gif && <img src={gif} alt="Theme Motion" className="theme__motion" />}
+
       <div className="home__content">
         <div className="home__data">
           <p className='saludo'>Hola,</p>

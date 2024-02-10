@@ -15,18 +15,18 @@ import Theme4 from './assets/magenta.svg';
 import Theme5 from './assets/orange.svg';
 import Theme6 from './assets/purple.svg';
 import Theme7 from './assets/red.svg';
-import Theme8 from './assets/blueviolet.svg';
-import Theme9 from './assets/white.svg';
+import Theme8 from './assets/skyblue.svg';
+import Theme9 from './assets/crocodile.svg';
 import Theme10 from './assets/black.svg';
 
 import Theme1Motion from './assets/blue.gif';
-
+import Theme2Motion from './assets/goldenrod.gif';
 import Theme3Motion from './assets/green.gif';
 import Theme4Motion from './assets/magenta.gif';
 import Theme5Motion from './assets/orange.gif';
 import Theme6Motion from './assets/purple.gif';
 import Theme7Motion from './assets/red.gif';
-
+import Theme8Motion from './assets/skyblue.gif';
 import Theme9Motion from './assets/white.gif';
 import Theme10Motion from './assets/black.gif';
 
@@ -466,94 +466,106 @@ export const themes = [
     id: 1,
     img: Theme1,
     color: 'hsl(229, 61%, 37%)',
+    gif: Theme1Motion,
   },
   {
     id: 2,
     img: Theme2,
     color: 'hsl(45 99% 48%)',
+    gif: Theme2Motion,
   },
   {
     id: 3,
     img: Theme3,
     color: 'hsl(154 65% 60%)',
+    gif: Theme3Motion,
   },
   {
     id: 4,
     img: Theme4,
     color: 'hsl(320, 67%, 73%)',
+    gif: Theme4Motion,
   },
   {
     id: 5,
     img: Theme5,
     color: 'hsl(17, 87%, 59%)',
+    gif: Theme5Motion,
   },
   {
     id: 6,
     img: Theme6,
     color: 'hsl(251, 99%, 69%)',
+    gif: Theme6Motion,
   },
   {
     id: 7,
     img: Theme7,
     color: 'hsl(351, 80%, 60%)',
+    gif: Theme7Motion,
   },
   {
     id: 8,
     img: Theme8,
     color: 'hsl(252, 100%, 79%)',
+    gif: Theme8Motion
   },
   {
     id: 9,
     img: Theme9,
     color: 'hsl(0, 0%, 100%)',
+    gif: Theme9Motion,
   },
   {
     id: 10,
     img: Theme10,
     color: 'hsl(0, 0%, 40%)',
+    gif: Theme10Motion,
   }
 ];
 
-export const themeMotion = [
-  {
-    id: 1,
-    img: Theme1Motion,
-  },
+// export const themeMotion = [
+//   {
+//     id: 1,
+//     img: Theme1Motion,
+//   },
   
-
-
-
-  {
-    id: 3,
-    img: Theme3Motion,
-  },
-  {
-    id: 4,
-    img: Theme4Motion,
-  },
-  {
-    id: 5,
-    img: Theme5Motion,
-  },
-  {
-    id: 6,
-    img: Theme6Motion,
-  },
-  {
-    id: 7,
-    img: Theme7Motion,
-  },
+//   {
+//     id: 2,
+//     img: Theme2Motion,
+//   },
+//   {
+//     id: 3,
+//     img: Theme3Motion,
+//   },
+//   {
+//     id: 4,
+//     img: Theme4Motion,
+//   },
+//   {
+//     id: 5,
+//     img: Theme5Motion,
+//   },
+//   {
+//     id: 6,
+//     img: Theme6Motion,
+//   },
+//   {
+//     id: 7,
+//     img: Theme7Motion,
+//   },
   
-
-
-    
-  {
-    id: 9,
-    img: Theme9Motion,
-  },
-  {
-    id: 10,
-    img: Theme10Motion,
-  }
-]
+//   {
+//     id: 8,
+//     img: Theme8Motion,
+//   },
+//   {
+//     id: 9,
+//     img: Theme9Motion,
+//   },
+//   {
+//     id: 10,
+//     img: Theme10Motion,
+//   }
+// ]
 
