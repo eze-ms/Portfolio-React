@@ -14,6 +14,7 @@ const Home = ({gif}) => {
 
       <div className="home__content">
         <div className="home__data">
+
           <p className='saludo'>Hola,</p>
           <h1 className="home__title">
             Soy <span className='title__bold'>Ezequiel.</span>

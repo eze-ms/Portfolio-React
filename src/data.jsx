@@ -1,12 +1,18 @@
-import { FaLinkedin, FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
+import { FaRegUser,FaLinkedin, FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
 import { FiLink, FiFileText } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
+import { LuKeySquare } from "react-icons/lu";
 
-import Work1 from './assets/cover_bmw.png';
+
+import Work1 from './assets/cover_bmw_c.webp';
+import Work1_1 from './assets/cover_bmw_c_2.webp';
 import Work2 from './assets/task_app.webp';
+import Work2_2 from './assets/task_app.webp';
 import Work3 from './assets/vertigo_cover_4.webp';
+import Work3_3 from './assets/vertigo_2.webp';
 import Work4 from './assets/casa_cuadrau.webp';
+import Work4_4 from './assets/casa_cuadrau_2.webp';
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -274,29 +280,33 @@ export const formation = [
     {
         id: 1,
         school: "Escola Espai",
-        description: "- Postgrado en Desarrollo Front-end"
+        description: "• Desarrollo e implementación de aplicaciones web."
     },
     {
       id: 2,
       school: "IT Academy",
       description: [
-        { title: "- Bases de datos MySQL" },
-        { title: "- SEO" },
-        { title: "- Scrum" },
-        { title: "- Metodologías Agile" }
+        { title: "• Bases de datos MySQL." },
+        { title: "• SEO." },
+        { title: "• Programación de una API con PHP y MySQL." },
+        { title: "• Scrum." },
+        { title: "• Metodologías Agile." },
+        { title: "• Wordpress." },
+        { title: "• Low Code/Bootstrap." }
+
       ]
     },
 
     {
         id: 3,
         school: "BAU, Centro Universitario de Artes y Diseño",
-        description: "- Diplomatura en Diseño Gráfico"
+        description: "• Diplomatura en Diseño Gráfico."
     },
     
     {
         id: 4,
-        school: "CESF, Centre d'Estudis Sant Francesc",
-        description: "- Técnico Superior en Sistemas de Telecomunicaciones e Informáticos"
+        school: "CESF, Centre d'estudis Sant Francesc",
+        description: "• Técnico Superior en Sistemas de Telecomunicaciones e Informáticos."
     }
    
 
@@ -314,6 +324,7 @@ export const portfolio = [
         title: 'Proyecto',
         isLink: false,
         desc: 'BMW Motorrad',
+        img2: Work1_1,
       },
       {
         icon: <FaCode />,
@@ -341,6 +352,16 @@ export const portfolio = [
           </a>
         ),
       },
+      {
+        icon: <FaRegUser />,
+        title: 'Usuario',
+        text2: 'demomo976',
+      },
+      {
+        icon: <LuKeySquare />,
+        title: 'Contraseña',
+        text2: '3ZYxKE0Q',
+      },
     ],
   },
   {
@@ -355,6 +376,8 @@ export const portfolio = [
         title: 'Proyecto',
         isLink: false,
         desc: 'Task App',
+        img2: Work2_2,
+
       },
       {
         icon: <FaCode />,
@@ -388,12 +411,14 @@ export const portfolio = [
     id: '3',
     img: Work3,
     title: 'Vertigo',
+    text:'Vertigo es una tienda en línea de artículos deportivos desarrollada utilizando JavaScript, HTML5 y CSS. Los productos se obtienen de archivos JSON, y los usuarios pueden seleccionar productos según sus preferencias de marca y color utilizando filtros. Gracias a esto, la aplicación ofrece una experiencia fluida y eficiente en la gestión de datos.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
         desc: 'Vertigo',
+        img2: Work3_3,
       },
       {
         icon: <FaCode />,
@@ -427,12 +452,16 @@ export const portfolio = [
     id: '4',
     img: Work4,
     title: 'Casa Cuadrau',
+    text:'Casa Cuadrau es un proyecto desarrollado con HTML5 y CSS3. Se trata de un sitio estático donde se ha puesto especial atención en el diseño de la maquetación y la animación, sin necesidad de utilizar plugins o scripts adicionales. Además, el diseño se ha enfocado en ofrecer una experiencia visualmente atractiva y fácil de navegar para los usuarios.',
+
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
         desc: 'Casa Cuadrau',
+        img2: Work4_4,
+
       },
       {
         icon: <FaCode />,

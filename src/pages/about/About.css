@@ -1,15 +1,15 @@
 .about__container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 50px; /* Espacio entre las columnas */
+    grid-template-columns: 2fr 3fr; 
+    gap: 0px; /* Espacio entre las columnas */
     justify-items: center;
   }
   
   .about__img {
-    width: 60%; 
+    width: 52%; 
     height: auto; 
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3);
     z-index: 1;
 }

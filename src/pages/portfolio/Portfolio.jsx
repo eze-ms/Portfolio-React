@@ -14,6 +14,8 @@ return (
           return <PortfolioItem key={item.id} {...item}/>
          })}
        </div>
+
+
     </section>
   )
 }

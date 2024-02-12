@@ -1,6 +1,7 @@
 .contact__container{
     grid-template-columns: 4fr 8fr;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    padding-bottom: 8rem;
 }
 
 
