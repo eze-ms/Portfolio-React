@@ -124,5 +124,9 @@
     .box__content-button-socials>.button{
         margin-bottom: 2rem;
     }
+
+    .color__block{
+        display: none;
+    }
   
 }

@@ -85,3 +85,9 @@
     right: 15px;
 
 }
+
+@media screen and (max-width: 900px) {
+    .style__switcher{
+        top: 2%;
+    }
+}

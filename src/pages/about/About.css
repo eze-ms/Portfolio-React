@@ -114,7 +114,25 @@
     .info_list_grid_about{
         flex-direction: column;
     }
+
+    .about__img{
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .about__info{
+        width: 100%;
+    }
+      .about__info>.button{
+        width: 63%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills,.others{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-
-
-
