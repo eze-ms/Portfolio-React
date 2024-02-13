@@ -67,6 +67,7 @@
     display: flex;
     column-gap: 16px;
     margin-top: 1rem;
+
 }
 
 .contact__socials-link{
@@ -79,6 +80,8 @@
     line-height: 55px;
     font-size: var(--normal-font-size);
     transition: all 0.3s ease;
+    font-size: 20px !important;
+
 }
 
 .contact__socials-link:hover{
@@ -163,10 +166,4 @@
         width: 100%;
         margin-top: 1rem;
     }
-
-    .send{
-        width: 70%;
-    }
-
-
 }
