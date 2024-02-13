@@ -167,8 +167,21 @@
     .portfolio__container{
         margin-top: 2rem;
     }
+
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio__hover{
+        padding: 1rem;
+    }
     .subtitle{
         margin-bottom: 0;
+    }
+
+    .portfolio__title{
+        margin: 3px;
     }
     
     .portfolio__container{
@@ -183,6 +196,11 @@
     }
     .modal__img{
         height: 200px
+    }
+
+    .description{
+        font-size: 12px;
+        margin-top: 3rem;
     }
 }
  

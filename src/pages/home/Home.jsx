@@ -24,8 +24,8 @@ const Home = ({gif}) => {
           </h2>
           <p className="home__description">Mi enfoque se centra en la creación de un código limpio, funcional e impactante para garantizar experiencias visuales atractivas en cada proyecto.</p>
           <div className='box__content-button-socials'>
-          <Link to='/about' className='button'>Más acerca de mí <span className="button__icon"><FaArrowRight /></span>
-          </Link>
+          {/* <Link to='/about' className='button'>Más acerca de mí <span className="button__icon"><FaArrowRight /></span>
+          </Link> */}
           <div className="contact__socials-home">
             <a href="https://www.linkedin.com/in/ezems/" className="contact__socials-link">
               <FaLinkedin/>
