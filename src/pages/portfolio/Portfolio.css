@@ -165,7 +165,24 @@
 
 @media screen and (max-width: 900px) {
     .portfolio__container{
+        margin-top: 2rem;
+    }
+    .subtitle{
+        margin-bottom: 0;
+    }
+    
+    .portfolio__container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio__img{
+        height: 215px;
+    }
+    .modal__close{
+        right: -0.5%;
+    }
+    .modal__img{
+        height: 200px
     }
 }
  

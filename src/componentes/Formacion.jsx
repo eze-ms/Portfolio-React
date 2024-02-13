@@ -14,7 +14,7 @@ function Formacion() {
       circles.forEach((circle, index) => {
         setTimeout(() => {
           circle.classList.add('visible');
-        }, index * 200); // Ajusta el tiempo de retraso según sea necesario
+        }, index * 100); // Ajusta el tiempo de retraso según sea necesario
       });
     }, 100);
 

@@ -10,7 +10,7 @@ function Info() {
     const timeoutIds = personalInfo.map((_, index) =>
       setTimeout(() => {
         setVisibleItems((prevVisibleItems) => [...prevVisibleItems, index]);
-      }, (index + 1) * 200)
+      }, (index + 1) * 70)
     );
 
     // Agrega la clase 'visible' al contenedor principal después de un breve retraso

@@ -36,14 +36,6 @@ code {
     font-size: var(--small-font-size);
   }
 
-  /* .stats__title{
-    padding-left: 35px;
-  }
-
-  .stats__title::before{
-    width: 22px;
-  } */
-
   .info_list_grid_about>.nav__item>.nav__link{
     margin-right: 1rem;
   }

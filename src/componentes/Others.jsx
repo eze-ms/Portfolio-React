@@ -16,7 +16,7 @@ function Others() {
         if (skillsElement) {
           skillsElement.classList.add('visible');
         }
-      }, (index + 1) * 200)
+      }, (index + 1) * 70)
     );
 
     return () => {

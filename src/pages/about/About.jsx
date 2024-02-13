@@ -30,8 +30,7 @@ const About = () => {
           <div className="box_about__me">
             <div className='about__info'>
               <p className='about__description_1'>
-                Como desarrollador front-end junior, poseo un impresionante conjunto de habilidades en HTML, CSS,
-                JavaScript, React, SCSS y PHP.
+                Como desarrollador front-end, cuento con habilidades sólidas en JavaScript, React y PHP, HTML y CSS/SASS . 
               </p>
               <p className='about__description_2'>
                 Con una base profesional en diseño, mi experiencia se centra en la
@@ -39,14 +38,13 @@ const About = () => {
                 como en la utilización de herramientas y técnicas de desarrollo de vanguardia.
               </p>
               <p className='about__description_3'>
-                Disfruto trabajando en un
-                entorno colaborativo donde puedo aprender y compartir conocimientos con mis compañeros para producir
-                aplicaciones web excepcionales.
+              Me siento cómodo trabajando en un ambiente colaborativo donde puedo aprender y compartir conocimientos con mis compañeros, con el objetivo de producir aplicaciones web de alta calidad.
               </p>
             </div>
             <a href={CV} download='' className='button'>
               Download CV <span className='button__icon'><FaDownload /></span>
             </a>
+            <div className='prueba'>
             <nav className='nav_about'>
               <div className={`${showAbout ? 'nav__menu_about show-menu' : 'nav__menu_about'}`}>
                 <ul className='info_list_grid_about'>
@@ -74,6 +72,8 @@ const About = () => {
             {activeLink === '/about/skills' && <Skills />}
             {activeLink === '/about/others' && <Others />}
             {activeLink === '/about/formation' && <Formacion />}
+            </div>
+            
           </div>
         </div>
       </section>

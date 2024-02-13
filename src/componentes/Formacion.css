@@ -41,12 +41,8 @@
     border-radius: 50%;
     left: -4px;
     transform: translateY(-50%);
-    transition: opacity 0.5s ease; /* Solo la transición de opacidad, sin transformación */
+    transition: opacity 1s ease; /* Solo la transición de opacidad, sin transformación */
     opacity: 0; /* Inicialmente invisible */
-}
-
-.circle.visible {
-    opacity: 1;
 }
 
 .circle.visible {

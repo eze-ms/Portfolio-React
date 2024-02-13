@@ -16,7 +16,7 @@ function Skills() {
         if (skillElement) {
           skillElement.classList.add('visible');
         }
-      }, (index + 1) * 200)
+      }, (index + 1) * 70)
     );
 
     return () => {

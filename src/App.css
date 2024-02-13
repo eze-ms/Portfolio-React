@@ -183,3 +183,10 @@ textarea{
   line-height: 60px;
 }
 
+
+@media screen and (max-width: 1200px){
+
+  .section{
+    padding-block: 2.35rem;
+  }
+}
