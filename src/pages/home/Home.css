@@ -105,15 +105,23 @@
 
 @media screen and (max-width: 900px) {
     
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .home{
         display: flex;
-        flex-direction: column-reverse;
         justify-content: flex-end;
         padding: 0;
+        margin-top: 12rem;
+
     }
 
     .home__data{
-        padding:3rem;
+        padding: 1rem;
+        margin-top: 2rem;
     }
 
     .box__content-button-socials{
