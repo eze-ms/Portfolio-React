@@ -13,6 +13,8 @@ import Work3 from './assets/vertigo_cover_4.webp';
 import Work3_3 from './assets/vertigo_2.webp';
 import Work4 from './assets/casa_cuadrau.webp';
 import Work4_4 from './assets/casa_cuadrau_2.webp';
+import Work5 from './assets/guitar.webp';
+import Work5_5 from './assets/guitar-2.webp'
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -317,7 +319,7 @@ export const portfolio = [
     id: '1',
     img: Work1,
     title: 'BMW Motorrad',
-    text: 'Réplica del sitio web de BMW desarrollado en PHP. Incluye características como gestión de sesiones, validación de formularios, creación de la landing page y sistemas de registro e inicio de sesión para seguridad. También incorpora una Base de Datos y permite filtrar modelos por categorías.',
+    text: 'Sitio PHP con gestión de sesiones, validación de formularios, registro/inicio de sesión seguro, landing page atractiva, base de datos integrada y filtrado por categorías.',
     details: [
       {
         icon: <FiFileText />,
@@ -368,7 +370,7 @@ export const portfolio = [
     id: '2',
     img: Work2,
     title: 'Task App',
-    text: 'Esta es una aplicación de gestión de tareas desarrollada en React. Se implementa Redux con un CRUD completo para gestionar el estado de las tareas. Además, se emplea React Router para administrar la navegación entre diferentes vistas, así como la implementación de componentes reutilizables para el diseño de la interfaz.',
+    text: 'Aplicación de gestión de tareas en React con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
 
     details: [
       {
@@ -411,7 +413,7 @@ export const portfolio = [
     id: '3',
     img: Work3,
     title: 'Vertigo',
-    text:'Vertigo es una tienda en línea de artículos deportivos desarrollada utilizando JavaScript, HTML5 y CSS. Los productos se obtienen de archivos JSON, y los usuarios pueden seleccionar productos según sus preferencias de marca y color utilizando filtros. Gracias a esto, la aplicación ofrece una experiencia fluida y eficiente en la gestión de datos.',
+    text:'Tienda online desarrollada en JavaScript. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
     details: [
       {
         icon: <FiFileText />,
@@ -452,7 +454,7 @@ export const portfolio = [
     id: '4',
     img: Work4,
     title: 'Casa Cuadrau',
-    text:'Casa Cuadrau es un proyecto desarrollado con HTML5 y CSS3. Se trata de un sitio estático donde se ha puesto especial atención en el diseño de la maquetación y la animación, sin necesidad de utilizar plugins o scripts adicionales. Además, el diseño se ha enfocado en ofrecer una experiencia visualmente atractiva y fácil de navegar para los usuarios.',
+    text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
 
     details: [
       {
@@ -461,6 +463,49 @@ export const portfolio = [
         isLink: false,
         desc: 'Casa Cuadrau',
         img2: Work4_4,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'HTML5, CSS3',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '5',
+    img: Work5,
+    title: 'Guitar LA',
+    text:'Proyecto en Vue que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes Vue para modularizar la interfaz y simplificar el manejo del carrito de compras',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Casa Cuadrau',
+        img2: Work5_5,
 
       },
       {
