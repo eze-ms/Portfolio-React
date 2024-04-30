@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import { useFormik } from 'formik';
@@ -8,6 +8,8 @@ import * as Yup from 'yup';
 import "./Contact.css";
 
 const Contact = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
   // Define el esquema de validación con Yup
   const validationSchema = Yup.object().shape({
     name: Yup.string().required('Campo obligatorio'),
@@ -28,7 +30,7 @@ const Contact = () => {
     onSubmit: async (values) => {
       try {
         // Envía los datos del formulario al servidor
-        await axios.post('/procesarFormulario.php', values);
+        await axios.post('http://localhost:3000/procesarFormulario.php', values);
       } catch (error) {
         // Manejo de errores
       }
@@ -147,6 +149,16 @@ const Contact = () => {
         </form>
       </div>
     </section>
+
+     {/* Ventana modal */}
+     {modalOpen && (
+      <div className="modal">
+        <div className="modal-content">
+          <span className="close-button" onClick={() => setModalOpen(false)}>&times;</span>
+          <p>¡Mensaje enviado con éxito!</p>
+        </div>
+      </div>
+    )}
     </div>
   )
 }

@@ -35,6 +35,7 @@
 
 .circle {
     position: absolute;
+    top: 87%;
     width: 8px;
     height: 8px;
     background-color: var(--first-color);
@@ -55,13 +56,13 @@
 }
 
 .circle2 {
-    top: 23%;
+    top: 17%;
 }
 
 .circle3 {
-    top: 62%;
+    top: 32%;
 }
 
 .circle4 {
-    top: 82%;
+    top: 72%;
 }

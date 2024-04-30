@@ -284,8 +284,15 @@ export const formation = [
         school: "Escola Espai",
         description: "• Desarrollo e implementación de aplicaciones web."
     },
+
     {
       id: 2,
+      school: "Udemy",
+      description: "• Typescript."
+    },
+
+    {
+      id: 3,
       school: "IT Academy",
       description: [
         { title: "• Bases de datos MySQL." },
@@ -300,13 +307,13 @@ export const formation = [
     },
 
     {
-        id: 3,
+        id: 4,
         school: "BAU, Centro Universitario de Artes y Diseño",
         description: "• Diplomatura en Diseño Gráfico."
     },
     
     {
-        id: 4,
+        id: 5,
         school: "CESF, Centre d'estudis Sant Francesc",
         description: "• Técnico Superior en Sistemas de Telecomunicaciones e Informáticos."
     }
@@ -370,7 +377,7 @@ export const portfolio = [
     id: '2',
     img: Work2,
     title: 'Task App',
-    text: 'Aplicación de gestión de tareas en React con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
+    text: 'Aplicación de gestión de tareas en REACT con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
 
     details: [
       {
@@ -413,7 +420,7 @@ export const portfolio = [
     id: '3',
     img: Work3,
     title: 'Vertigo',
-    text:'Tienda online desarrollada en JavaScript. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
+    text:'Tienda online desarrollada en JAVASCRIPT. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
     details: [
       {
         icon: <FiFileText />,
@@ -497,7 +504,7 @@ export const portfolio = [
     id: '5',
     img: Work5,
     title: 'Guitar LA',
-    text:'Proyecto en Vue que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes Vue para modularizar la interfaz y simplificar el manejo del carrito de compras',
+    text:'Proyecto en VUE.Js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
 
     details: [
       {
@@ -519,7 +526,7 @@ export const portfolio = [
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://la-guitar.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -529,7 +536,7 @@ export const portfolio = [
         title: 'GitHub',
         isLink: true,
         desc: (
-          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://la-guitar.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
