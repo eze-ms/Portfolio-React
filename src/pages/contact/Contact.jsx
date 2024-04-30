@@ -2,6 +2,7 @@ import React from 'react';
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import { useFormik } from 'formik';
+import axios from 'axios';
 import * as Yup from 'yup';
 
 import "./Contact.css";
@@ -24,33 +25,21 @@ const Contact = () => {
       message: '',
     },
     validationSchema: validationSchema,
-
-    validate: (values) => {
-      const errors = {};
-  
-      // Validación del correo electrónico
-      if (!values.email) {
-        errors.email = 'Campo obligratorio';
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
-        errors.email = 'Correo electrónico inválido';
+    onSubmit: async (values) => {
+      try {
+        // Envía los datos del formulario al servidor
+        await axios.post('/procesarFormulario.php', values);
+      } catch (error) {
+        // Manejo de errores
       }
-  
-      // Otras validaciones para los demás campos
-  
-      return errors;
-    },
-    onSubmit: (values) => {
-    console.log(values);
     },
   });
 
   return (
     <div id="contacto">
-
-    <section className="contact section">
-      <h2 className="section__title">Contacto</h2>
-
-      <div className="contact__container container grid">
+      <section className="contact section">
+        <h2 className="section__title">Contacto</h2>
+        <div className="contact__container container grid">
         <div className="contact__data">
           <h3 className="contact__title">¡No seas tímid@!</h3>
           <p className="contact__description">
