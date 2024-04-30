@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Profile from '../../assets/purple.gif';
 import "./Home.css"
-import{ FaArrowRight,FaLinkedin,FaGithub } from 'react-icons/fa';
+import{ FaLinkedin,FaGithub } from 'react-icons/fa';
 
 const Home = ({gif}) => {
-  console.log('GIF:', gif); // Verifica si se muestra la URL del gif
+  
   return (
     <div id="home">
       <section className='home section grid'>

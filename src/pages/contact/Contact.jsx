@@ -139,7 +139,7 @@ const Contact = () => {
               )}
             </div>
 
-            <button className='button send'>
+            <button type="submit" className='button send'>
               Enviar mensaje
               <span className="button__icon contact__button-icon">
                   <FiSend/>
