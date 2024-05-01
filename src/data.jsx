@@ -15,6 +15,8 @@ import Work4 from './assets/casa_cuadrau.webp';
 import Work4_4 from './assets/casa_cuadrau_2.webp';
 import Work5 from './assets/guitar.webp';
 import Work5_5 from './assets/guitar-2.webp'
+import Work6 from './assets/cover-design-studio.webp';
+import Work6_6 from './assets/studio.webp';
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -536,13 +538,56 @@ export const portfolio = [
         title: 'GitHub',
         isLink: true,
         desc: (
-          <a href="https://la-guitar.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://github.com/eze-ms/Guitarla" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
       },
     ],
   },
+  {
+    id: '6',
+    img: Work6,
+    title: 'Art-Design-Studio',
+    text:'Aplicación web en React y TypeScript con arquitectura modular. Implementa hooks personalizados para gestionar eficientemente el estado, incluyendo acumulación y vaciado del carrito.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Casa Cuadrau',
+        img2: Work6_6,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'React, Typescript',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://art-design-studio.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/art-design-studio" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  }
 ];
 
 export const themes = [
