@@ -1,7 +1,7 @@
 import { FaRegUser,FaLinkedin, FaCode, FaGithub, FaBootstrap, FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaReact, FaPhp, FaHtml5, FaCss3Alt, FaSass, FaJs, FaDatabase, FaVuejs, FaJira } from 'react-icons/fa';
 import { FiLink, FiFileText } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
-import { SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
+import { SiTailwindcss, SiMysql, SiJquery, SiNextdotjs, SiTypescript, SiMui, SiAdobeillustrator, SiAdobephotoshop, SiAdobeindesign, SiAdobepremierepro, SiAdobeaftereffects, SiAdobexd, SiFigma, SiWordpress } from 'react-icons/si';
 import { LuKeySquare } from "react-icons/lu";
 
 
@@ -17,6 +17,8 @@ import Work5 from './assets/guitar.webp';
 import Work5_5 from './assets/guitar-2.webp'
 import Work6 from './assets/cover-design-studio.webp';
 import Work6_6 from './assets/studio.webp';
+import Work7 from './assets/patients-cover.webp';
+import Work7_7 from './assets/patients-cover.webp';
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -172,7 +174,7 @@ export const personalSkills = [
     },
     {
       id: '4',
-      title: 'Vue.Js',
+      title: 'Vue.js',
       icon: <FaVuejs className='nav__icon' />,
     },
     {
@@ -214,6 +216,11 @@ export const personalSkills = [
       id: '12',
       title: 'Database',
       icon: <FaDatabase className='nav__icon' />,
+    },
+    {
+      id: '13',
+      title: 'Tailwind',
+      icon: <SiTailwindcss className='nav__icon' />,
     }
 ]
 
@@ -506,14 +513,14 @@ export const portfolio = [
     id: '5',
     img: Work5,
     title: 'Guitar LA',
-    text:'Proyecto en VUE.Js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
+    text:'Proyecto en VUE.js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
 
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Casa Cuadrau',
+        desc: 'Guitar LA',
         img2: Work5_5,
 
       },
@@ -521,7 +528,7 @@ export const portfolio = [
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'HTML5, CSS3',
+        desc: 'Vue.js',
       },
       {
         icon: <BiLinkExternal />,
@@ -556,7 +563,7 @@ export const portfolio = [
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Casa Cuadrau',
+        desc: 'Art-Design-Studio',
         img2: Work6_6,
 
       },
@@ -582,6 +589,49 @@ export const portfolio = [
         isLink: true,
         desc: (
           <a href="https://github.com/eze-ms/art-design-studio" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '7',
+    img: Work7,
+    title: 'Patient Management',
+    text:'Aplicación creada con Vue.js y Tailwind CSS para gestionar pacientes. Ofrece funcionalidades de registro, edición y eliminación, junto con validación de campos y alertas visuales para una experiencia fluida del usuario.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Patient Management',
+        img2: Work7_7,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Vue.js, Tailwind CSS',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://veterinary-patient.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Patient-Management" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
