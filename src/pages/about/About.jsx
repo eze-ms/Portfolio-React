@@ -30,16 +30,13 @@ const About = () => {
           <div className="box_about__me">
             <div className='about__info'>
               <p className='about__description_1'>
-                Como desarrollador front-end, cuento con habilidades sólidas en JavaScript, React y PHP, HTML y CSS/SASS . 
+              Con una sólida base profesional en diseño, mi trayectoria se enfoca en la creación de interfaces dinámicas y atractivas que destacan por su funcionalidad y rendimiento. 
+              Me esfuerzo especialmente en el detalle al redactar un código limpio y eficiente, aprovechando herramientas y técnicas de vanguardia. 
               </p>
               <p className='about__description_2'>
-                Con una base profesional en diseño, mi experiencia se centra en la
-                creación de interfaces dinámicas y atractivas mediante la redacción de código limpio y optimizado, así
-                como en la utilización de herramientas y técnicas de desarrollo de vanguardia.
+              En este portafolio, encontrarás ejemplos concretos que demuestran cómo aplico mis habilidades en JavaScript, Typescript, React, Vue.js y PHP para dar vida a interfaces dinámicas y cautivadoras, elevando la calidad de cada proyecto en el que participo.
               </p>
-              <p className='about__description_3'>
-              Me siento cómodo trabajando en un ambiente colaborativo donde puedo aprender y compartir conocimientos con mis compañeros, con el objetivo de producir aplicaciones web de alta calidad.
-              </p>
+            
             </div>
             <a href={CV} download='' className='button'>
               Download CV <span className='button__icon'><FaDownload /></span>
