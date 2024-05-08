@@ -19,6 +19,8 @@ import Work6 from './assets/cover-design-studio.webp';
 import Work6_6 from './assets/studio.webp';
 import Work7 from './assets/patients-cover.webp';
 import Work7_7 from './assets/patients-cover.webp';
+import Work8 from './assets/cover-amount-calc.webp';
+import Work8_8 from './assets/cover-amount-calc.webp';
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -637,7 +639,50 @@ export const portfolio = [
         ),
       },
     ],
-  }
+  },
+  {
+    id: '8',
+    img: Work8,
+    title: 'Tip Calculator',
+    text:'Calculadora desarrollada con React y Tailwind CSS. Se han implementado diversas funcionalidades, como un menú interactivo, un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Tip Calculator',
+        img2: Work8_8,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'React, Tailwind CSS',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://veterinary-patient.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Patient-Management" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
 ];
 
 export const themes = [
