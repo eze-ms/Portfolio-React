@@ -691,7 +691,7 @@ export const portfolio = [
     id: '9',
     img: Work9,
     title: 'Calorie Counter',
-    text:'Alicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
+    text:'Aplicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
 
     details: [
       {
