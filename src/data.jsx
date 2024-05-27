@@ -451,7 +451,7 @@ export const portfolio = [
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://eze-ms.github.io/vertigo-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://vertigo-demo.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -666,7 +666,7 @@ export const portfolio = [
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://veterinary-patient.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://amount-calculator.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -676,7 +676,7 @@ export const portfolio = [
         title: 'GitHub',
         isLink: true,
         desc: (
-          <a href="https://github.com/eze-ms/Patient-Management" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://github.com/eze-ms/Tip-Calculator-React-TS" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),

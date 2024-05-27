@@ -23,9 +23,7 @@ const About = () => {
     <div id="about">
        <section className='about section grid'>
        <h3 className='section__title'>Acerca de <span>mí</span></h3>
-        <div className='about__container'>
-        
-
+        <div className='about__container container'>
           <img src={Profile} alt='' className='about__img' />
           <div className="box_about__me">
             <div className='about__info'>

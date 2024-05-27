@@ -1,22 +1,17 @@
 .home{
-    grid-template-columns: 7.32fr 7.68fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
     height: 100vh;
 }
 .logo{
     color: var(--first-color);
 }
 
-.home__img{
-    height: 80%;
-    object-fit: cover;
-    border-radius: 30px;
-    /* box-shadow: 0 0 8px hsla(0, 0%, 0% , 0.3); */
-    z-index: 1;
-    margin-inline: auto;
-} 
-
+.theme__motion{
+    width: 40%;
+}
 .home__data{
     background-color:  var(--fist-color);
     max-width: 600px;
