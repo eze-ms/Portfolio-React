@@ -21,6 +21,10 @@ import Work7 from './assets/patients-cover.webp';
 import Work7_7 from './assets/patients-cover.webp';
 import Work8 from './assets/cover-amount-calc.webp';
 import Work8_8 from './assets/cover-amount-calc.webp';
+import Work9 from './assets/food_tracking.webp';
+import Work9_9 from './assets/calorie_track.webp';
+
+
 
 import Theme1 from './assets/blue.svg';
 import Theme2 from './assets/goldenrod.svg';
@@ -644,7 +648,7 @@ export const portfolio = [
     id: '8',
     img: Work8,
     title: 'Tip Calculator',
-    text:'Calculadora desarrollada con React y Tailwind CSS. Se han implementado diversas funcionalidades, como un menú interactivo, un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
+    text:'Calculadora desarrollada con React y Tailwind CSS. Se han implementado un menú interactivo junto con un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
 
     details: [
       {
@@ -683,6 +687,49 @@ export const portfolio = [
       },
     ],
   },
+  {
+    id: '9',
+    img: Work9,
+    title: 'Calorie Counter',
+    text:'Alicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Calorie Counter',
+        img2: Work9_9,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'React, Tailwind CSS',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://food-tracking.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Food-Tracker-React" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  }
 ];
 
 export const themes = [
