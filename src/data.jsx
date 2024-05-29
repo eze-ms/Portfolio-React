@@ -565,7 +565,7 @@ export const portfolio = [
     id: '6',
     img: Work6,
     title: 'Art-Design-Studio',
-    text:'Aplicación web en React y TypeScript con arquitectura modular. Implementa hooks personalizados para gestionar eficientemente el estado, incluyendo acumulación y vaciado del carrito.',
+    text:'Desarrollé una aplicación web utilizando React y TypeScript con una arquitectura modular. Implementé useReducer para centralizar la gestión del estado, lo que simplificó el código y facilitó su mantenimiento. La aplicación permite a los usuarios gestionar eficientemente el estado, incluyendo la acumulación y el vaciado del carrito de compras.',
 
     details: [
       {
