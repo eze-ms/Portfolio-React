@@ -23,6 +23,9 @@ import Work8 from './assets/cover-amount-calc.webp';
 import Work8_8 from './assets/cover-amount-calc.webp';
 import Work9 from './assets/food_tracking.webp';
 import Work9_9 from './assets/calorie_track.webp';
+import Work10 from './assets/tracker-count.webp';
+import Work10_10 from './assets/tracker-interface.webp';
+
 
 
 
@@ -143,7 +146,7 @@ export const personalInfo = [
         <FiLink />
       </a>
     ),
-  }, // Añadida coma aquí
+  }, 
   
   {
     id: 8,
@@ -158,7 +161,7 @@ export const personalInfo = [
         <FiLink />
       </a>
     ),
-    // isLink: true,
+    
   },
 ];
 
@@ -519,7 +522,7 @@ export const portfolio = [
     id: '5',
     img: Work5,
     title: 'Guitar LA',
-    text:'Proyecto en VUE.js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
+    text:'Proyecto en Vue.js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
 
     details: [
       {
@@ -729,6 +732,49 @@ export const portfolio = [
         ),
       },
     ],
+  },
+  {
+    id: '10',
+    img: Work10,
+    title: 'Expense Tracker',
+    text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Expense Tracker',
+        img2: Work10_10,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Vue.js',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://expense-financial-tracker.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Tracker-control-Vue" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
   }
 ];
 
@@ -794,49 +840,4 @@ export const themes = [
     gif: Theme10Motion,
   }
 ];
-
-// export const themeMotion = [
-//   {
-//     id: 1,
-//     img: Theme1Motion,
-//   },
-  
-//   {
-//     id: 2,
-//     img: Theme2Motion,
-//   },
-//   {
-//     id: 3,
-//     img: Theme3Motion,
-//   },
-//   {
-//     id: 4,
-//     img: Theme4Motion,
-//   },
-//   {
-//     id: 5,
-//     img: Theme5Motion,
-//   },
-//   {
-//     id: 6,
-//     img: Theme6Motion,
-//   },
-//   {
-//     id: 7,
-//     img: Theme7Motion,
-//   },
-  
-//   {
-//     id: 8,
-//     img: Theme8Motion,
-//   },
-//   {
-//     id: 9,
-//     img: Theme9Motion,
-//   },
-//   {
-//     id: 10,
-//     img: Theme10Motion,
-//   }
-// ]
 
