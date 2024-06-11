@@ -341,7 +341,94 @@ export const formation = [
 
 export const portfolio = [
   {
+    id: '3',
+    category: 'Javascript',
+    img: Work3,
+    title: 'Vertigo',
+    text:'Tienda online desarrollada en JAVASCRIPT. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Vertigo',
+        img2: Work3_3,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'JavaScript',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://vertigo-demo.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/vertigo-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '4',
+    category: 'Javascript',
+    img: Work4,
+    title: 'Casa Cuadrau',
+    text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Casa Cuadrau',
+        img2: Work4_4,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'HTML5, CSS3',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
     id: '1',
+    category: 'PHP',
     img: Work1,
     title: 'BMW Motorrad',
     text: 'Sitio PHP con gestión de sesiones, validación de formularios, registro/inicio de sesión seguro, landing page atractiva, base de datos integrada y filtrado por categorías.',
@@ -393,6 +480,7 @@ export const portfolio = [
   },
   {
     id: '2',
+    category: 'React',
     img: Work2,
     title: 'Task App',
     text: 'Aplicación de gestión de tareas en REACT con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
@@ -435,91 +523,8 @@ export const portfolio = [
     ],
   },
   {
-    id: '3',
-    img: Work3,
-    title: 'Vertigo',
-    text:'Tienda online desarrollada en JAVASCRIPT. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Vertigo',
-        img2: Work3_3,
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'JavaScript',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://vertigo-demo.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/vertigo-demo" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
-  {
-    id: '4',
-    img: Work4,
-    title: 'Casa Cuadrau',
-    text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
-
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Casa Cuadrau',
-        img2: Work4_4,
-
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'HTML5, CSS3',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
-  {
     id: '5',
+    category: 'Vue',
     img: Work5,
     title: 'Guitar LA',
     text:'Proyecto en Vue.js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
@@ -563,6 +568,7 @@ export const portfolio = [
   },
   {
     id: '6',
+    category: 'React',
     img: Work6,
     title: 'Art-Design-Studio',
     text:'Desarrollé una aplicación web utilizando React y TypeScript con una arquitectura modular. Implementé useReducer para centralizar la gestión del estado, lo que simplificó el código y facilitó su mantenimiento. La aplicación permite a los usuarios gestionar eficientemente el estado, incluyendo la acumulación y el vaciado del carrito de compras.',
@@ -606,6 +612,7 @@ export const portfolio = [
   },
   {
     id: '7',
+    category: 'Vue',
     img: Work7,
     title: 'Patient Management',
     text:'Aplicación creada con Vue.js y Tailwind CSS para gestionar pacientes. Ofrece funcionalidades de registro, edición y eliminación, junto con validación de campos y alertas visuales para una experiencia fluida del usuario.',
@@ -649,6 +656,7 @@ export const portfolio = [
   },
   {
     id: '8',
+    category: 'React',
     img: Work8,
     title: 'Tip Calculator',
     text:'Calculadora desarrollada con React y Tailwind CSS. Se han implementado un menú interactivo junto con un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
@@ -692,6 +700,7 @@ export const portfolio = [
   },
   {
     id: '9',
+    category: 'React',
     img: Work9,
     title: 'Calorie Counter',
     text:'Aplicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
@@ -735,6 +744,7 @@ export const portfolio = [
   },
   {
     id: '10',
+    category: '',
     img: Work10,
     title: 'Expense Tracker',
     text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',

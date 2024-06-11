@@ -1,18 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Close from '../assets/close.svg';
+import "./PortfolioItem.css"
 
 function PortfolioItem({ img, title, text, details, img2 }) {
-  const [modal, setModal] =useState(false);
+  const [modal, setModal] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const toogleModal = () => {
+  const toggleModal = () => {
     setModal(!modal);
   };
 
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
-    <div className="portfolio__item">
+    <div className={`portfolio__item ${isVisible ? 'visible' : ''}`}>
       <img src={img} alt="" className="portfolio__img" />
     
-      <div className="portfolio__hover" onClick={toogleModal}>
+      <div className="portfolio__hover" onClick={toggleModal}>
         <h3 className="portfolio__title">{title}</h3>
         <div>
           <p className='description'>{text}</p>
@@ -25,11 +35,11 @@ function PortfolioItem({ img, title, text, details, img2 }) {
               src={Close} 
               alt="" 
               className="modal__close" 
-              onClick={toogleModal} />
+              onClick={toggleModal} />
             <h4 className="modal__title">{title}</h4>
             
             <ul className='modal__list grid'>
-              {details.map(({ icon, title, desc,text2 }, index) => {
+              {details.map(({ icon, title, desc, text2 }, index) => {
                 return (
                   <li className="modal__item" key={index}>
                     <span className='item__icon'>{icon}</span>
@@ -37,7 +47,6 @@ function PortfolioItem({ img, title, text, details, img2 }) {
                       <span className="item__title">{title}: </span>
                       <span className="item__details">{desc}</span>
                       <span className="item__title2">{text2}</span>
-
                     </div>
                   </li>
                 );
@@ -49,7 +58,6 @@ function PortfolioItem({ img, title, text, details, img2 }) {
         </div>
       )}
     </div>
-    
   );
 }
 

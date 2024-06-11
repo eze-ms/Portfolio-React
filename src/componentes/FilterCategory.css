@@ -1,0 +1,39 @@
+.filter__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  font-weight: var(--weigth-400);
+  margin-top: 3rem;
+}
+
+.filter__item {
+  margin-right: 2rem; 
+  position: relative;
+  display: inline-block;
+  font-weight: var(--weigth-600);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Agregar transición suave */
+}
+
+.filter__item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 0;
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: transparent; /* Comienza con la línea transparente */
+  transition: width 0.3s ease, background-color 0.3s ease; /* Agregar transición suave */
+}
+
+.filter__item:hover::before,
+.filter__item.active::before {
+  width: 100%; /* Expandir la línea al ancho completo */
+  background-color: var(--first-color); /* Cambiar el color de la línea al color principal */
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
