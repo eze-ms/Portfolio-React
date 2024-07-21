@@ -167,77 +167,77 @@ export const personalInfo = [
 ];
 
 export const personalSkills = [
-    {
+  {
       id: '1',
       title: 'JavaScript',
       icon: <FaJs className='nav__icon' />,
-    },
-    {
+  },
+  {
       id: '2',
       title: 'React',
       icon: <FaReact className='nav__icon' />,
-    },
-    {
+  },
+  {
       id: '3',
       title: 'TypeScript',
       icon: <SiTypescript className='nav__icon' />,
-    },
-    {
-      id: '4',
-      title: 'Vue.js',
-      icon: <FaVuejs className='nav__icon' />,
-    },
-    {
-      id: '5',
-      title: 'HTML5',
-      icon: <FaHtml5 className='nav__icon' />,
-    },
-    {
-      id: '6',
-      title: 'CSS',
-      icon: <FaCss3Alt className='nav__icon' />,
-    },
-    {
-      id: '7',
-      title: 'Sass',
-      icon: <FaSass className='nav__icon' />,
-    },
-    {
+  },
+  {
       id: '8',
       title: 'NextJs',
       icon: <SiNextdotjs className='nav__icon' />,
-    },
-    {
+  },
+  {
+      id: '4',
+      title: 'Vue.js',
+      icon: <FaVuejs className='nav__icon' />,
+  },
+  {
+      id: '5',
+      title: 'HTML5',
+      icon: <FaHtml5 className='nav__icon' />,
+  },
+  {
+      id: '6',
+      title: 'CSS',
+      icon: <FaCss3Alt className='nav__icon' />,
+  },
+  {
+      id: '7',
+      title: 'Sass',
+      icon: <FaSass className='nav__icon' />,
+  },
+  {
+      id: '12',
+      title: 'Tailwind',
+      icon: <SiTailwindcss className='nav__icon' />,
+  },
+  {
       id: '9',
       title: 'MySQL',
       icon: <SiMysql className='nav__icon' />,
-    },
-    {
+  },
+  {
+      id: '13',
+      title: 'Database',
+      icon: <FaDatabase className='nav__icon' />,
+  },
+  {
       id: '10',
       title: 'PHP',
       icon: <FaPhp className='nav__icon' />,
-    },
-    {
+  },
+  {
       id: '11',
       title: 'jQuery',
       icon: <SiJquery className='nav__icon' />,
-    },
-    {
-      id: '12',
-      title: 'Database',
-      icon: <FaDatabase className='nav__icon' />,
-    },
-    {
-      id: '13',
-      title: 'Tailwind',
-      icon: <SiTailwindcss className='nav__icon' />,
-    }
-]
+  }
+];
 
 export const otherPersonalSkills = [
     {
         id: '1',
-        title: 'Github',
+        title: 'GitHub',
         icon: <FaGithub className='nav__icon'/>
     },
     {
@@ -745,50 +745,7 @@ export const portfolio = [
   },
   {
     id: '10',
-    category: '',
-    img: Work10,
-    title: 'Expense Tracker',
-    text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',
-
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Expense Tracker',
-        img2: Work10_10,
-
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'Vue.js',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://expense-financial-tracker.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/Tracker-control-Vue" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  
-    id: '10',
-    category: '',
+    category: 'Vue',
     img: Work10,
     title: 'Expense Tracker',
     text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',
@@ -832,7 +789,7 @@ export const portfolio = [
   },
   {
     id: '11',
-    category: '',
+    category: 'Vue',
     img: Work11,
     title: 'Gestor de Comidas con Vue.js y Pinia',
     text:'Proyecto de aplicación de planificación de comidas desarrollado con Vue.js, Pinia y Vue Router. Permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
@@ -842,7 +799,7 @@ export const portfolio = [
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Expense Tracker',
+        desc: 'Vue + Pinia',
         img2: Work11_11,
 
       },

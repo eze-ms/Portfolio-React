@@ -6,7 +6,8 @@ import "./Portfolio.css";
 
 const Portfolio = () => {
   const [filteredPortfolio, setFilteredPortfolio] = useState(portfolio);
-  
+  const [showMore, setShowMore] = useState(false);
+
   const handleCategorySelect = (category) => {
     if (category === 'Todos') {
       setFilteredPortfolio(portfolio);
@@ -14,9 +15,12 @@ const Portfolio = () => {
       const filteredProjects = portfolio.filter(project => project.category === category);
       setFilteredPortfolio(filteredProjects);
     }
+    setShowMore(false); // Reset show more when category changes
   };
 
   const allCategories = ['Todos', ...new Set(portfolio.map(project => project.category))];
+
+  const visibleProjects = showMore ? filteredPortfolio : filteredPortfolio.slice(0, 6);
 
   return (
     <section className="portfolio section">
@@ -26,10 +30,16 @@ const Portfolio = () => {
       <Filter categories={allCategories} onSelectCategory={handleCategorySelect} />
 
       <div className="portfolio__container container grid">
-        {filteredPortfolio.map((item) => {
+        {visibleProjects.map((item) => {
           return <PortfolioItem key={item.id} {...item}/>
         })}
       </div>
+      
+      {!showMore && filteredPortfolio.length > 6 && (
+        <button className="show-more-button" onClick={() => setShowMore(true)}>
+          Ver más
+        </button>
+      )}
     </section>
   );
 }
