@@ -25,7 +25,8 @@ import Work9 from './assets/food_tracking.webp';
 import Work9_9 from './assets/calorie_track.webp';
 import Work10 from './assets/tracker-count.webp';
 import Work10_10 from './assets/tracker-interface.webp';
-
+import Work11 from './assets/cover-meal.webp';
+import Work11_11 from './assets/meal.webp';
 
 
 
@@ -344,8 +345,8 @@ export const portfolio = [
     id: '3',
     category: 'Javascript',
     img: Work3,
-    title: 'Vertigo',
-    text:'Tienda online desarrollada en JAVASCRIPT. Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
+    title: 'Vertigo: Tienda Online en JavaScript',
+    text:'Los productos se obtienen de archivos JSON y se pueden filtrar según marca y color, ofreciendo una experiencia de compra personalizada y eficiente.',
     details: [
       {
         icon: <FiFileText />,
@@ -780,6 +781,93 @@ export const portfolio = [
         isLink: true,
         desc: (
           <a href="https://github.com/eze-ms/Tracker-control-Vue" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  
+    id: '10',
+    category: '',
+    img: Work10,
+    title: 'Expense Tracker',
+    text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Expense Tracker',
+        img2: Work10_10,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Vue.js',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://expense-financial-tracker.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Tracker-control-Vue" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '11',
+    category: '',
+    img: Work11,
+    title: 'Gestor de Comidas con Vue.js y Pinia',
+    text:'Proyecto de aplicación de planificación de comidas desarrollado con Vue.js, Pinia y Vue Router. Permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
+
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Expense Tracker',
+        img2: Work11_11,
+
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Vue.js',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://meals-pinia-api-vue-router.vercel.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Meals-Pinia-API-Vue-Router" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
