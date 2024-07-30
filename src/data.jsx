@@ -11,8 +11,8 @@ import Work2 from './assets/task_app.webp';
 import Work2_2 from './assets/task_app.webp';
 import Work3 from './assets/vertigo_cover_4.webp';
 import Work3_3 from './assets/vertigo_2.webp';
-import Work4 from './assets/casa_cuadrau.webp';
-import Work4_4 from './assets/casa_cuadrau_2.webp';
+// import Work4 from './assets/casa_cuadrau.webp';
+// import Work4_4 from './assets/casa_cuadrau_2.webp';
 import Work5 from './assets/guitar.webp';
 import Work5_5 from './assets/guitar-2.webp'
 import Work6 from './assets/cover-design-studio.webp';
@@ -29,6 +29,8 @@ import Work11 from './assets/cover-meal.webp';
 import Work11_11 from './assets/meal.webp';
 import Work12 from './assets/bienes-raices.webp';
 import Work12_12 from './assets/propiedades.webp';
+import Work13 from './assets/movie-api.webp';
+import Work13_13 from './assets/modal-moviedb.webp';
 
 
 
@@ -344,7 +346,7 @@ export const formation = [
 
 export const portfolio = [
   {
-    id: '3',
+    id: '1',
     category: 'Javascript',
     img: Work3,
     title: 'Vertigo: Tienda Online en JavaScript',
@@ -428,7 +430,7 @@ export const portfolio = [
   //   ],
   // },
   {
-    id: '1',
+    id: '2',
     category: 'PHP',
     img: Work1,
     title: 'BMW Motorrad',
@@ -480,7 +482,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '5',
+    id: '3',
     category: 'Vue',
     img: Work5,
     title: 'Gestión de Carrito con Vue.js',
@@ -522,7 +524,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '2',
+    id: '4',
     category: 'React',
     img: Work2,
     title: 'Task App',
@@ -564,7 +566,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '6',
+    id: '5',
     category: 'React',
     img: Work6,
     title: 'Gestión de Carrito con React y TypeScript',
@@ -606,7 +608,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '7',
+    id: '6',
     category: 'Vue',
     img: Work7,
     title: 'Patient Management',
@@ -648,7 +650,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '8',
+    id: '7',
     category: 'React',
     img: Work8,
     title: 'Tip Calculator',
@@ -690,7 +692,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '9',
+    id: '8',
     category: 'React',
     img: Work9,
     title: 'Calorie Counter',
@@ -732,7 +734,7 @@ export const portfolio = [
     ],
   },
   {
-    id: '10',
+    id: '9',
     category: 'Vue',
     img: Work10,
     title: 'Gestión de Gastos con Vue.js',
@@ -773,9 +775,8 @@ export const portfolio = [
       },
     ],
   },
-  
   {
-    id: '12',
+    id: '10',
     category: 'Javascript',
     img: Work12,
     title: 'Aplicación de Gestión de Propiedades',
@@ -785,7 +786,7 @@ export const portfolio = [
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'JS + Node.js + Express + MongoDB',
+        desc: 'Node.js + Express + MongoDB',
         img2: Work12_12,
       },
       {
@@ -821,7 +822,7 @@ export const portfolio = [
     category: 'Vue',
     img: Work11,
     title: 'Gestor de Comidas con Vue.js y Pinia',
-    text: 'Proyecto de aplicación de planificación de comidas desarrollado con Vue.js, Pinia y Vue Router. Permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
+    text: 'Aplicación que permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
     details: [
       {
         icon: <FiFileText />,
@@ -858,6 +859,48 @@ export const portfolio = [
       },
     ],
   },
+  {
+    id: '13',
+    category: 'React',
+    img: Work13,
+    title: 'Gestor de Películas con React, API y Tailwind CSS',
+    text: 'Aplicación que consume una API para obtener datos, valida con Zod y utiliza middleware para gestionar las solicitudes. Implementa una arquitectura de componentes funcionales, hooks personalizados para la gestión del estado y enrutamiento dinámico, optimizando eficiencia y modularidad',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'React + API + Tailwind ',
+        img2: Work13_13,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'React',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://66a8e64b10de99181b664ec4--movie-db-api-react.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Movie-DB-API-React" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  }
 ];
 
 export const themes = [
