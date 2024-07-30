@@ -27,6 +27,8 @@ import Work10 from './assets/tracker-count.webp';
 import Work10_10 from './assets/tracker-interface.webp';
 import Work11 from './assets/cover-meal.webp';
 import Work11_11 from './assets/meal.webp';
+import Work12 from './assets/bienes-raices.webp';
+import Work12_12 from './assets/propiedades.webp';
 
 
 
@@ -383,50 +385,48 @@ export const portfolio = [
       },
     ],
   },
-  {
-    id: '4',
-    category: 'Javascript',
-    img: Work4,
-    title: 'Casa Cuadrau',
-    text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
-
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Casa Cuadrau',
-        img2: Work4_4,
-
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'HTML5, CSS3',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
+  // {
+  //   id: '4',
+  //   category: 'Javascript',
+  //   img: Work4,
+  //   title: 'Casa Cuadrau',
+  //   text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
+  //   details: [
+  //     {
+  //       icon: <FiFileText />,
+  //       title: 'Proyecto',
+  //       isLink: false,
+  //       desc: 'Casa Cuadrau',
+  //       img2: Work4_4,
+  //     },
+  //     {
+  //       icon: <FaCode />,
+  //       title: 'Lenguaje',
+  //       isLink: false,
+  //       desc: 'HTML5, CSS3',
+  //     },
+  //     {
+  //       icon: <BiLinkExternal />,
+  //       title: 'Ver',
+  //       isLink: true,
+  //       desc: (
+  //         <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
+  //           <FiLink />
+  //         </a>
+  //       ),
+  //     },
+  //     {
+  //       icon: <FaGithub />,
+  //       title: 'GitHub',
+  //       isLink: true,
+  //       desc: (
+  //         <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
+  //           <FiLink />
+  //         </a>
+  //       ),
+  //     },
+  //   ],
+  // },
   {
     id: '1',
     category: 'PHP',
@@ -480,64 +480,18 @@ export const portfolio = [
     ],
   },
   {
-    id: '2',
-    category: 'React',
-    img: Work2,
-    title: 'Task App',
-    text: 'Aplicación de gestión de tareas en REACT con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
-
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Task App',
-        img2: Work2_2,
-
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'React',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://taskappdev.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/TaskApp" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
-  {
     id: '5',
     category: 'Vue',
     img: Work5,
-    title: 'Guitar LA',
-    text:'Proyecto en Vue.js que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras',
-
+    title: 'Gestión de Carrito con Vue.js',
+    text: 'Aplicación web que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras. Implementa Vuex para la gestión centralizada del estado.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Guitar LA',
+        desc: 'Guitar LA permite a los usuarios explorar y gestionar productos de guitarras, incluyendo la adición de productos al carrito y el seguimiento de su estado.',
         img2: Work5_5,
-
       },
       {
         icon: <FaCode />,
@@ -568,26 +522,66 @@ export const portfolio = [
     ],
   },
   {
-    id: '6',
+    id: '2',
     category: 'React',
-    img: Work6,
-    title: 'Art-Design-Studio',
-    text:'Desarrollé una aplicación web utilizando React y TypeScript con una arquitectura modular. Implementé useReducer para centralizar la gestión del estado, lo que simplificó el código y facilitó su mantenimiento. La aplicación permite a los usuarios gestionar eficientemente el estado, incluyendo la acumulación y el vaciado del carrito de compras.',
-
+    img: Work2,
+    title: 'Task App',
+    text: 'Aplicación de gestión de tareas en REACT con Redux para el estado y React Router para la navegación. Emplea componentes reutilizables para la interfaz.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Art-Design-Studio',
-        img2: Work6_6,
-
+        desc: 'Task App',
+        img2: Work2_2,
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'React, Typescript',
+        desc: 'React',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://taskappdev.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/TaskApp" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '6',
+    category: 'React',
+    img: Work6,
+    title: 'Gestión de Carrito con React y TypeScript',
+    text: 'Aplicación web utilizando una arquitectura modular. Implementé useReducer para centralizar la gestión del estado, simplificando el código y mejorando su mantenimiento. La aplicación permite a los usuarios gestionar el estado del carrito de compras de manera eficiente, incluyendo la adición y eliminación de artículos.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Art Design Studio',
+        img2: Work6_6,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'React, TypeScript',
       },
       {
         icon: <BiLinkExternal />,
@@ -616,8 +610,7 @@ export const portfolio = [
     category: 'Vue',
     img: Work7,
     title: 'Patient Management',
-    text:'Aplicación creada con Vue.js y Tailwind CSS para gestionar pacientes. Ofrece funcionalidades de registro, edición y eliminación, junto con validación de campos y alertas visuales para una experiencia fluida del usuario.',
-
+    text: 'Aplicación creada con Vue.js y Tailwind CSS para gestionar pacientes. Ofrece funcionalidades de registro, edición y eliminación, junto con validación de campos y alertas visuales para una experiencia fluida del usuario.',
     details: [
       {
         icon: <FiFileText />,
@@ -625,7 +618,6 @@ export const portfolio = [
         isLink: false,
         desc: 'Patient Management',
         img2: Work7_7,
-
       },
       {
         icon: <FaCode />,
@@ -660,8 +652,7 @@ export const portfolio = [
     category: 'React',
     img: Work8,
     title: 'Tip Calculator',
-    text:'Calculadora desarrollada con React y Tailwind CSS. Se han implementado un menú interactivo junto con un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
-
+    text: 'Calculadora desarrollada con React y Tailwind CSS. Se han implementado un menú interactivo junto con un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
     details: [
       {
         icon: <FiFileText />,
@@ -669,7 +660,6 @@ export const portfolio = [
         isLink: false,
         desc: 'Tip Calculator',
         img2: Work8_8,
-
       },
       {
         icon: <FaCode />,
@@ -704,8 +694,7 @@ export const portfolio = [
     category: 'React',
     img: Work9,
     title: 'Calorie Counter',
-    text:'Aplicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
-
+    text: 'Aplicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
     details: [
       {
         icon: <FiFileText />,
@@ -713,7 +702,6 @@ export const portfolio = [
         isLink: false,
         desc: 'Calorie Counter',
         img2: Work9_9,
-
       },
       {
         icon: <FaCode />,
@@ -747,9 +735,8 @@ export const portfolio = [
     id: '10',
     category: 'Vue',
     img: Work10,
-    title: 'Expense Tracker',
-    text:'Esta aplicación de planificación de gastos, creada con Vue.js, permite a los usuarios definir un presupuesto inicial y gestionar sus gastos. Los gastos añadidos actualizan el porcentaje disponible del presupuesto, visualizado en una gráfica en tiempo real. Ofrece funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías específicas.',
-
+    title: 'Gestión de Gastos con Vue.js',
+    text: 'Aplicación que permite establecer un presupuesto inicial y gestionar sus gastos, actualizando dinámicamente el porcentaje de presupuesto restant. Visualización de datos financieros y los muestra a través de una gráfica en tiempo real. Proporciona funcionalidades para agregar, editar, eliminar y filtrar gastos por categorías.',
     details: [
       {
         icon: <FiFileText />,
@@ -757,7 +744,6 @@ export const portfolio = [
         isLink: false,
         desc: 'Expense Tracker',
         img2: Work10_10,
-
       },
       {
         icon: <FaCode />,
@@ -787,13 +773,55 @@ export const portfolio = [
       },
     ],
   },
+  
+  {
+    id: '12',
+    category: 'Javascript',
+    img: Work12,
+    title: 'Aplicación de Gestión de Propiedades',
+    text: 'Proyecto desarrollado con Node.js, Express y MongoDB. Permite agregar, editar y eliminar propiedades, gestionando usuarios y autenticación con JWT. Incluye una API REST, middleware personalizado y un sistema de plantillas.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'JS + Node.js + Express + MongoDB',
+        img2: Work12_12,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Javascript',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://bienes-racies-nodejs-0793b5a2e407.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/BienesRaices-Node-Js" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
   {
     id: '11',
     category: 'Vue',
     img: Work11,
     title: 'Gestor de Comidas con Vue.js y Pinia',
-    text:'Proyecto de aplicación de planificación de comidas desarrollado con Vue.js, Pinia y Vue Router. Permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
-
+    text: 'Proyecto de aplicación de planificación de comidas desarrollado con Vue.js, Pinia y Vue Router. Permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
     details: [
       {
         icon: <FiFileText />,
@@ -801,7 +829,6 @@ export const portfolio = [
         isLink: false,
         desc: 'Vue + Pinia',
         img2: Work11_11,
-
       },
       {
         icon: <FaCode />,
@@ -830,7 +857,7 @@ export const portfolio = [
         ),
       },
     ],
-  }
+  },
 ];
 
 export const themes = [
