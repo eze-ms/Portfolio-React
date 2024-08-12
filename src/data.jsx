@@ -31,6 +31,8 @@ import Work12 from './assets/bienes-raices.webp';
 import Work12_12 from './assets/propiedades.webp';
 import Work13 from './assets/movie-api.webp';
 import Work13_13 from './assets/modal-moviedb.webp';
+import Work14 from './assets/codecaeer1.webp';
+import Work14_14 from './assets/codecaeer2.webp';
 
 
 
@@ -779,21 +781,21 @@ export const portfolio = [
     id: '10',
     category: 'Javascript',
     img: Work12,
-    title: 'Aplicación de Gestión de Propiedades',
+    title: 'Gestión de Propiedades con Node.Js',
     text: 'Proyecto desarrollado con Node.js, Express y MongoDB. Permite agregar, editar y eliminar propiedades, gestionando usuarios y autenticación con JWT. Incluye una API REST, middleware personalizado y un sistema de plantillas.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Node.js + Express + MongoDB',
+        desc: 'Gestión de Propiedades',
         img2: Work12_12,
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'Javascript',
+        desc: 'Javascript + Node.js + Express + MongoDB',
       },
       {
         icon: <BiLinkExternal />,
@@ -821,21 +823,21 @@ export const portfolio = [
     id: '11',
     category: 'Vue',
     img: Work11,
-    title: 'Gestor de Comidas con Vue.js y Pinia',
+    title: 'Gestor de Comidas',
     text: 'Aplicación que permite agregar, editar y eliminar comidas, gestionando datos a través de una API externa. Incluye gestión de estado con Pinia y navegación fluida con Vue Router. Diseño responsivo y optimizado.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Vue + Pinia',
+        desc: 'Api gestor de comidas',
         img2: Work11_11,
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'Vue.js',
+        desc: 'Vue.js + Pinia',
       },
       {
         icon: <BiLinkExternal />,
@@ -870,14 +872,14 @@ export const portfolio = [
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'React + API + Tailwind ',
+        desc: 'Gestor de películas',
         img2: Work13_13,
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'React',
+        desc: 'React + API + Tailwind',
       },
       {
         icon: <BiLinkExternal />,
@@ -895,6 +897,48 @@ export const portfolio = [
         isLink: true,
         desc: (
           <a href="https://github.com/eze-ms/Movie-DB-API-React" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '14',
+    category: 'Javascript',
+    img: Work14,
+    title: 'Plataforma de empleo hecha con Node.js y MongoDB',
+    text: 'CodeCareer es una plataforma que conecta profesionales con oportunidades laborales, utilizando Node.js para gestionar APIs RESTful y MongoDB como base de datos. La aplicación implementa una arquitectura modular con validación y autenticación, optimizando la interacción con la base de datos y asegurando un rendimiento eficiente y escalable.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Plataforma de empleo ',
+        img2: Work14_14,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Javascript + NodeJs + MogoDB',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://codecareer-node-mongodb-acb26f138e28.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/CodeCareer-NodeJs" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),

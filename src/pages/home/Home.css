@@ -1,8 +1,7 @@
 .home{
     grid-template-columns: 10.32fr 7.68fr;
     align-items: center;
-    /* padding: 40px; */
-    height: 100vh;
+    padding-block: 4.375rem;
 }
 .logo{
     color: var(--first-color);
@@ -19,7 +18,6 @@
 
 .home__data{
     background-color:  var(--fist-color);
-    max-width: 600px;
     margin-inline: auto;
     padding-top: 1.25rem;
     text-align: left;
@@ -104,25 +102,29 @@
 
 
 @media screen and (max-width: 900px) {
-    
+   
+    .home__description {
+        font-size: 1.25rem;
+        width: 100%;
+    }
     .grid{
         display: flex;
         flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
-
+    .home__data{
+        width: 90%;
+    }
     .home{
         display: flex;
-        justify-content: flex-end;
         padding: 0;
-        margin-top: 2rem;
-
+        margin-top: 10rem;
+        height: inherit;
     }
-
-    .home__data{
-        padding: 1rem;
-        margin-top: 2rem;
-    }
+    /* .home img {
+        display: none;
+    } */
 
     .box__content-button-socials{
         flex-direction: column;

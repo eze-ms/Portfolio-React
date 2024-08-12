@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Profile from '../../assets/purple.gif';
 import "./Home.css"
 import{ FaLinkedin,FaGithub } from 'react-icons/fa';

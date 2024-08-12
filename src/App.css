@@ -68,7 +68,7 @@
 .App {
     margin: auto;
     text-align: center;
-    width: 1240px;
+    max-width: 1240px;
 }
 
 a {
@@ -118,7 +118,7 @@ textarea{
 /* REUSABLE */
 
 .container{
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin-inline: auto;
 }
 
@@ -188,5 +188,10 @@ textarea{
 
   .section{
     padding-block: 2.35rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  body{
+    display: flex;
   }
 }
