@@ -19,10 +19,6 @@ import Work6 from './assets/cover-design-studio.webp';
 import Work6_6 from './assets/studio.webp';
 import Work7 from './assets/patients-cover.webp';
 import Work7_7 from './assets/patients-cover.webp';
-import Work8 from './assets/cover-amount-calc.webp';
-import Work8_8 from './assets/cover-amount-calc.webp';
-import Work9 from './assets/food_tracking.webp';
-import Work9_9 from './assets/calorie_track.webp';
 import Work10 from './assets/tracker-count.webp';
 import Work10_10 from './assets/tracker-interface.webp';
 import Work11 from './assets/cover-meal.webp';
@@ -33,6 +29,8 @@ import Work13 from './assets/movie-api.webp';
 import Work13_13 from './assets/modal-moviedb.webp';
 import Work14 from './assets/codecaeer1.webp';
 import Work14_14 from './assets/codecaeer2.webp';
+import Work15 from './assets/muffin-cover.webp';
+import Work15_15 from './assets/muffin.webp';
 
 
 
@@ -330,20 +328,17 @@ export const formation = [
 
       ]
     },
-
     {
         id: 4,
+        school: "CESF, Centre d'estudis Sant Francesc",
+        description: "• Técnico Superior en Sistemas de Telecomunicaciones e Informáticos."
+    },
+
+    {
+        id: 5,
         school: "BAU, Centro Universitario de Artes y Diseño",
         description: "• Diplomatura en Diseño Gráfico."
     },
-    
-    {
-        id: 5,
-        school: "CESF, Centre d'estudis Sant Francesc",
-        description: "• Técnico Superior en Sistemas de Telecomunicaciones e Informáticos."
-    }
-   
-
 ];
 
 export const portfolio = [
@@ -488,13 +483,13 @@ export const portfolio = [
     category: 'Vue',
     img: Work5,
     title: 'Gestión de Carrito con Vue.js',
-    text: 'Aplicación web que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras. Implementa Vuex para la gestión centralizada del estado.',
+    text: 'Aplicación que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras. Implementa Vuex para la gestión centralizada del estado.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Guitar LA permite a los usuarios explorar y gestionar productos de guitarras, incluyendo la adición de productos al carrito y el seguimiento de su estado.',
+        desc: 'Gestor de guitarras',
         img2: Work5_5,
       },
       {
@@ -611,10 +606,10 @@ export const portfolio = [
   },
   {
     id: '6',
-    category: 'Vue',
+    category: 'React',
     img: Work7,
-    title: 'Patient Management',
-    text: 'Aplicación creada con Vue.js y Tailwind CSS para gestionar pacientes. Ofrece funcionalidades de registro, edición y eliminación, junto con validación de campos y alertas visuales para una experiencia fluida del usuario.',
+    title: 'Gestión de pacientes con React y Zustand',
+    text: 'Aplicación para consultorías médicas, desarrollada con React y Zustand para una gestión eficiente del estado. Permite añadir, editar y eliminar pacientes, manteniendo un registro detallado. El uso de Zustand optimiza el rendimiento y mejora la experiencia del usuario.',
     details: [
       {
         icon: <FiFileText />,
@@ -627,14 +622,14 @@ export const portfolio = [
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'Vue.js, Tailwind CSS',
+        desc: 'React + Zustand',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://veterinary-patient.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://patients-management-zustand.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -644,91 +639,7 @@ export const portfolio = [
         title: 'GitHub',
         isLink: true,
         desc: (
-          <a href="https://github.com/eze-ms/Patient-Management" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
-  {
-    id: '7',
-    category: 'React',
-    img: Work8,
-    title: 'Tip Calculator',
-    text: 'Calculadora desarrollada con React y Tailwind CSS. Se han implementado un menú interactivo junto con un formulario para el porcentaje de propina y un sistema de gestión de órdenes. Se optimizó el rendimiento mediante un hook personalizado para el estado de la orden y el uso de useMemo para evitar renders innecesarios.',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Tip Calculator',
-        img2: Work8_8,
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'React, Tailwind CSS',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://amount-calculator.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/Tip-Calculator-React-TS" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-    ],
-  },
-  {
-    id: '8',
-    category: 'React',
-    img: Work9,
-    title: 'Calorie Counter',
-    text: 'Aplicación de contador de calorías desarrollado con React, simplifica el seguimiento del consumo y quema de calorías. Con un formulario fáciles de usar, se puede agregar, editar y eliminar actividades rápidamente. Los datos se guardan en localStorage y la aplicación utiliza useState y useReducer para una gestión eficiente del estado.',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Proyecto',
-        isLink: false,
-        desc: 'Calorie Counter',
-        img2: Work9_9,
-      },
-      {
-        icon: <FaCode />,
-        title: 'Lenguaje',
-        isLink: false,
-        desc: 'React, Tailwind CSS',
-      },
-      {
-        icon: <BiLinkExternal />,
-        title: 'Ver',
-        isLink: true,
-        desc: (
-          <a href="https://food-tracking.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
-            <FiLink />
-          </a>
-        ),
-      },
-      {
-        icon: <FaGithub />,
-        title: 'GitHub',
-        isLink: true,
-        desc: (
-          <a href="https://github.com/eze-ms/Food-Tracker-React" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://github.com/eze-ms/Patient-Management-React-Zustand" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -781,7 +692,7 @@ export const portfolio = [
     id: '10',
     category: 'Javascript',
     img: Work12,
-    title: 'Gestión de Propiedades con Node.Js',
+    title: 'Gestión de propiedades con Node.Js',
     text: 'Proyecto desarrollado con Node.js, Express y MongoDB. Permite agregar, editar y eliminar propiedades, gestionando usuarios y autenticación con JWT. Incluye una API REST, middleware personalizado y un sistema de plantillas.',
     details: [
       {
@@ -865,7 +776,7 @@ export const portfolio = [
     id: '13',
     category: 'React',
     img: Work13,
-    title: 'Gestor de Películas con React, API y Tailwind CSS',
+    title: 'Gestor de películas con React, API y Tailwind CSS',
     text: 'Aplicación que consume una API para obtener datos, valida con Zod y utiliza middleware para gestionar las solicitudes. Implementa una arquitectura de componentes funcionales, hooks personalizados para la gestión del estado y enrutamiento dinámico, optimizando eficiencia y modularidad',
     details: [
       {
@@ -939,6 +850,48 @@ export const portfolio = [
         isLink: true,
         desc: (
           <a href="https://github.com/eze-ms/CodeCareer-NodeJs" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: '15',
+    category: 'Vue',
+    img: Work15,
+    title: 'Plataforma coworking con Vue.js y Firebase',
+    text: 'Esta plataforma utiliza Vue.js y Vuetify para la interfaz de usuario y Firebase como backend para la autenticación, almacenamiento y base de datos en tiempo real. La aplicación es altamente interactiva y escalable, ofreciendo una experiencia fluida tanto para los administradores como para los usuarios finales.',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Proyecto',
+        isLink: false,
+        desc: 'Gestión de coworking ',
+        img2: Work15_15,
+      },
+      {
+        icon: <FaCode />,
+        title: 'Lenguaje',
+        isLink: false,
+        desc: 'Vue.js + Firebase ',
+      },
+      {
+        icon: <BiLinkExternal />,
+        title: 'Ver',
+        isLink: true,
+        desc: (
+          <a href="https://muffin-app-vue-firebase.vercel.app//" target="_blank" rel="noopener noreferrer" className="item__details">
+            <FiLink />
+          </a>
+        ),
+      },
+      {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        isLink: true,
+        desc: (
+          <a href="https://github.com/eze-ms/Muffin-app-Vue-Firebase" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),

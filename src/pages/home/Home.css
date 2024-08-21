@@ -1,7 +1,7 @@
 .home{
     grid-template-columns: 10.32fr 7.68fr;
     align-items: center;
-    padding-block: 4.375rem;
+    padding-block: 10.375rem;
 }
 .logo{
     color: var(--first-color);

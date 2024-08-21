@@ -20,9 +20,13 @@ const Home = ({gif}) => {
             Soy <span className='title__bold'>Ezequiel.</span>
           </h1>
           <h2 className="home__subtitle">
-            <span>Desarrollador Front-end</span>
+            <span>Desarrollador Full-stack</span>
           </h2>
-          <p className="home__description">Mi enfoque se centra en la creación de un código limpio, funcional e impactante para garantizar experiencias visuales atractivas en cada proyecto.</p>
+          <p className="home__description">
+            Como desarrollador full-stack, transformo ideas en aplicaciones web completas, desde interfaces intuitivas hasta sistemas backend robustos. Mi objetivo es ofrecer soluciones rápidas, escalables y bien diseñadas que generen impacto. ¡Explora más sobre mi trabajo!
+          </p>
+
+
           <div className='box__content-button-socials'>
           {/* <Link to='/about' className='button'>Más acerca de mí <span className="button__icon"><FaArrowRight /></span>
           </Link> */}

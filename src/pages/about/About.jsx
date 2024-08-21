@@ -27,14 +27,12 @@ const About = () => {
           <img src={Profile} alt='' className='about__img' />
           <div className="box_about__me">
             <div className='about__info'>
-              <p className='about__description_1'>
-              Con una sólida base profesional en diseño, mi trayectoria se enfoca en la creación de interfaces dinámicas y atractivas que destacan por su funcionalidad y rendimiento. 
-              Me esfuerzo especialmente en el detalle al redactar un código limpio y eficiente, aprovechando herramientas y técnicas de vanguardia. 
-              </p>
-              <p className='about__description_2'>
-              En este portafolio, encontrarás ejemplos concretos que demuestran cómo aplico mis habilidades en JavaScript, Typescript, React, Vue.js y PHP para dar vida a interfaces dinámicas y cautivadoras, elevando la calidad de cada proyecto en el que participo.
-              </p>
-            
+            <p className='about__description_1'>
+              Con una sólida base en front-end y una transición exitosa al desarrollo full-stack, manejo todo el proceso de creación de aplicaciones web optimizadas para ofrecer una experiencia de usuario fluida y un rendimiento sólido. Utilizo tecnologías como JavaScript, React, Vue.js, Node.js y MongoDB para construir soluciones escalables y eficientes.
+            </p>
+            <p className='about__description_2'>
+              En este portafolio, verás cómo combino diseño intuitivo con arquitectura robusta en proyectos reales que resuelven problemas concretos. Cada proyecto está diseñado para maximizar la usabilidad y rendimiento, aplicando las mejores prácticas en cada etapa del desarrollo. ¡Explora mis proyectos para ver cómo puedo aportar valor a tus ideas!
+            </p>
             </div>
             <a href={CV} download='' className='button'>
               Download CV <span className='button__icon'><FaDownload /></span>
