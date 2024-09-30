@@ -11,10 +11,8 @@ import Work2 from './assets/task_app.webp';
 import Work2_2 from './assets/task_app.webp';
 import Work3 from './assets/vertigo_cover_4.webp';
 import Work3_3 from './assets/vertigo_2.webp';
-// import Work4 from './assets/casa_cuadrau.webp';
-// import Work4_4 from './assets/casa_cuadrau_2.webp';
-import Work5 from './assets/guitar.webp';
-import Work5_5 from './assets/guitar-2.webp'
+import Work5 from './assets/cover-pos.webp';
+import Work5_5 from './assets/pos.webp'
 import Work6 from './assets/cover-design-studio.webp';
 import Work6_6 from './assets/studio.webp';
 import Work7 from './assets/patients-cover.webp';
@@ -384,48 +382,6 @@ export const portfolio = [
       },
     ],
   },
-  // {
-  //   id: '4',
-  //   category: 'Javascript',
-  //   img: Work4,
-  //   title: 'Casa Cuadrau',
-  //   text:'Sitio web estático y adaptable a dispositivos móviles, donde se han implementado animaciones prescindiendo por completo de la necesidad de plugins adicionales.',
-  //   details: [
-  //     {
-  //       icon: <FiFileText />,
-  //       title: 'Proyecto',
-  //       isLink: false,
-  //       desc: 'Casa Cuadrau',
-  //       img2: Work4_4,
-  //     },
-  //     {
-  //       icon: <FaCode />,
-  //       title: 'Lenguaje',
-  //       isLink: false,
-  //       desc: 'HTML5, CSS3',
-  //     },
-  //     {
-  //       icon: <BiLinkExternal />,
-  //       title: 'Ver',
-  //       isLink: true,
-  //       desc: (
-  //         <a href="https://eze-ms.github.io/cuadrau-demo/" target="_blank" rel="noopener noreferrer" className="item__details">
-  //           <FiLink />
-  //         </a>
-  //       ),
-  //     },
-  //     {
-  //       icon: <FaGithub />,
-  //       title: 'GitHub',
-  //       isLink: true,
-  //       desc: (
-  //         <a href="https://github.com/eze-ms/cuadrau-demo" target="_blank" rel="noopener noreferrer" className="item__details">
-  //           <FiLink />
-  //         </a>
-  //       ),
-  //     },
-  //   ],
-  // },
   {
     id: '2',
     category: 'PHP',
@@ -482,28 +438,28 @@ export const portfolio = [
     id: '3',
     category: 'Vue',
     img: Work5,
-    title: 'Gestión de Carrito con Vue.js',
-    text: 'Aplicación que emplea herramientas de gestión de estado para manejar la aplicación. Incluye una base de datos simulada y utiliza componentes para modularizar la interfaz y simplificar el manejo del carrito de compras. Implementa Vuex para la gestión centralizada del estado.',
+    title: 'Gestión de Ventas',
+    text: 'Aplicación para la gestión de ventas en puntos de venta (POS), que permite a los usuarios realizar un seguimiento de productos vendidos, gestionar cupones, y realizar análisis de ventas.',
     details: [
       {
         icon: <FiFileText />,
         title: 'Proyecto',
         isLink: false,
-        desc: 'Gestor de guitarras',
+        desc: 'Gestor de ventas',
         img2: Work5_5,
       },
       {
         icon: <FaCode />,
         title: 'Lenguaje',
         isLink: false,
-        desc: 'Vue.js',
+        desc: 'Vue.js + TailwindCSS',
       },
       {
         icon: <BiLinkExternal />,
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://la-guitar.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://eze-ms-pos-vue-js.vercel.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
@@ -513,7 +469,7 @@ export const portfolio = [
         title: 'GitHub',
         isLink: true,
         desc: (
-          <a href="https://github.com/eze-ms/Guitarla" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://github.com/eze-ms/eze-ms-POS-Vue.js" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
