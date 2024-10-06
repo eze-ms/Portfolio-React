@@ -795,7 +795,7 @@ export const portfolio = [
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://codecareer-node-mongodb-acb26f138e28.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://code-career-render.onrender.com/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
