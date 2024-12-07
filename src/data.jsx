@@ -753,7 +753,7 @@ export const portfolio = [
         title: 'Ver',
         isLink: true,
         desc: (
-          <a href="https://66a8e64b10de99181b664ec4--movie-db-api-react.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
+          <a href="https://movie-db-api-react.netlify.app/" target="_blank" rel="noopener noreferrer" className="item__details">
             <FiLink />
           </a>
         ),
